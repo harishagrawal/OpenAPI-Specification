@@ -1,0 +1,15 @@
+Here is the CSV content populated with dummy values for the given set of variables, as per the provided instructions:
+
+```csv
+provider_id,value,statusCode,scenario
+display_name,flink_compute_pool_0,200,Successful responses: OK
+id,iam.max_environments.per_org,400,Client error responses: Bad Request
+secret,R15hoiDIq8Nxu/lY4mPO3DwAVIfU5W7OI+efsB607mLgHTnVW5XJGVqX2ysDx987,401,Client error responses: Unauthorized
+kind,ComputePool,403,Client error responses: Forbidden
+api_version,fcpm/v2,404,Client error responses: Not Found
+id,iam.max_environments.per_org,422,Client error responses: Unprocessable Entity
+secret,R15hoiDIq8Nxu/lY4mPO3DwAVIfU5W7OI+efsB607mLgHTnVW5XJGVqX2ysDx987,429,Client error responses: Too Many Requests
+secret,R15hoiDIq8Nxu/lY4mPO3DwAVIfU5W7OI+efsB607mLgHTnVW5XJGVqX2ysDx987,500,Server error responses: Internal Server Error
+```
+
+This CSV content includes a variety of HTTP status codes, corresponding scenarios, and placeholder values for `provider_id` and `value` taken from the swagger data examples provided.
