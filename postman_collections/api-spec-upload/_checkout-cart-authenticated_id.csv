@@ -1,0 +1,6 @@
+id,statusCode,scenario
+urn:uuid:8a8792f1-22aa-3ae3-56f3-dff72c2677ad,200,Successful responses: OK
+urn:uuid:8a8792f1-22aa-3ae3-56f3-dff72c2677ad,400,Client error responses: Bad Request
+urn:uuid:8a8792f1-22aa-3ae3-56f3-dff72c2677ad,401,Client error responses: Unauthorized
+urn:uuid:8a8792f1-22aa-3ae3-56f3-dff72c2677ad,403,Client error responses: Forbidden
+urn:uuid:8a8792f1-22aa-3ae3-56f3-dff72c2677ad,404,Client error responses: Not Found
