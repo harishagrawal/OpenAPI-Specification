@@ -1,0 +1,5 @@
+id,statusCode,scenario
+urn:uuid:02be5415-11dc-3d2d-cef4-55733c5de7a8,200,Successful responses: OK
+urn:uuid:02be5415-11dc-3d2d-cef4-55733c5de7a8,400,Client error responses: Bad Request
+urn:uuid:02be5415-11dc-3d2d-cef4-55733c5de7a8,403,Client error responses: Forbidden
+urn:uuid:02be5415-11dc-3d2d-cef4-55733c5de7a8,404,Client error responses: Not Found
