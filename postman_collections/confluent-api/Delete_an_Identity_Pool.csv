@@ -1,0 +1,8 @@
+ provider_id,id,statusCode,scenario
+p-abc123,5f44854a-b16a-4b44-bb03-240b2a911001,204,Successful responses: No Content
+p-abc123,5f44854a-b16a-4b44-bb03-240b2a911002,400,Client error responses: Bad Request
+p-abc123,5f44854a-b16a-4b44-bb03-240b2a911003,401,Client error responses: Unauthorized
+p-abc123,5f44854a-b16a-4b44-bb03-240b2a911004,403,Client error responses: Forbidden
+p-abc123,5f44854a-b16a-4b44-bb03-240b2a911005,404,Client error responses: Not Found
+p-abc123,5f44854a-b16a-4b44-bb03-240b2a911006,429,Client error responses: Too Many Requests
+p-abc123,5f44854a-b16a-4b44-bb03-240b2a911007,500,Server error responses: Internal Server Error

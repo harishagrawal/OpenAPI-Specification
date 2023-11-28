@@ -1,0 +1,9 @@
+ id,value,statusCode,scenario
+1234567890,Successful responses: OK,200,Successful responses: OK
+1234567890,Client error responses: Bad Request,400,Client error responses: Bad Request
+1234567890,Client error responses: Unauthorized,401,Client error responses: Unauthorized
+1234567890,Client error responses: Forbidden,403,Client error responses: Forbidden
+1234567890,Client error responses: Not Found,404,Client error responses: Not Found
+1234567890,Client error responses: Unprocessable Entity,422,Client error responses: Unprocessable Entity
+1234567890,Client error responses: Too Many Requests,429,Client error responses: Too Many Requests
+1234567890,Server error responses: Internal Server Error,500,Server error responses: Internal Server Error

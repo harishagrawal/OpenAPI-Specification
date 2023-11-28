@@ -1,0 +1,7 @@
+ spec.cloud,spec.region_name,spec.packages,page_size,page_token,statusCode,scenario
+GCP,us-central1,ESSENTIALS,,,"200","Successful responses: OK"
+AWS,us-east-1,ADVANCED,,,"400","Client error responses: Bad Request"
+AWS,us-east-1,ADVANCED,,,"401","Client error responses: Unauthorized"
+AWS,us-east-1,ADVANCED,,,"403","Client error responses: Forbidden"
+AWS,us-east-1,ADVANCED,,,"429","Client error responses: Too Many Requests"
+AWS,us-east-1,ADVANCED,,,"500","Server error responses: Internal Server Error"

@@ -1,0 +1,7 @@
+ cluster_id,name,statusCode,scenario
+cluster-1,Successful responses: OK,200,Successful responses: OK
+cluster-1,Client error responses: Bad Request,400,Client error responses: Bad Request
+cluster-1,Client error responses: Unauthorized,401,Client error responses: Unauthorized
+cluster-1,Client error responses: Forbidden,403,Client error responses: Forbidden
+cluster-1,Client error responses: Too Many Requests,429,Client error responses: Too Many Requests
+cluster-1,Server error responses: Internal Server Error,500,Server error responses: Internal Server Error

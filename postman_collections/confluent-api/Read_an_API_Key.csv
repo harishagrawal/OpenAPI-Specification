@@ -1,0 +1,8 @@
+ id,statusCode,scenario
+1234567890,200,Successful responses: OK
+1234567891,400,Client error responses: Bad Request
+1234567892,401,Client error responses: Unauthorized
+1234567893,403,Client error responses: Forbidden
+1234567894,404,Client error responses: Not Found
+1234567895,429,Client error responses: Too Many Requests
+1234567896,500,Server error responses: Internal Server Error

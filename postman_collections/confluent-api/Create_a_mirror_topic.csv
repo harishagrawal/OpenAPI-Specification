@@ -1,0 +1,7 @@
+ cluster_id,link_name,source_topic_name,mirror_topic_name,replication_factor,value,statusCode,scenario
+lkc-00000,link-sb1,,topic-sb1,1,,204,Successful responses: No Content
+lkc-00000,link-sb2,,topic-sb2,3,,204,Successful responses: No Content
+lkc-00000,link-sb3,,topic-sb3,5,,400,Client error responses: Bad Request
+lkc-00000,link-sb4,,topic-sb4,7,,401,Client error responses: Unauthorized
+lkc-00000,link-sb5,,topic-sb5,9,,429,Client error responses: Too Many Requests
+lkc-00000,link-sb6,,topic-sb6,11,,500,Server error responses: Internal Server Error

@@ -1,0 +1,10 @@
+```
+scope,environment,network,kafka_cluster,id,page_size,page_token,statusCode,scenario
+scope,environment,network,kafka_cluster,id,page_size,page_token,statusCode,scenario
+ORGANIZATION,env-00000,n-00000,lkc-00000,1,100,,200,Successful responses: OK
+ORGANIZATION,env-00000,n-00000,lkc-00000,1,100,,400,Client error responses: Bad Request
+ORGANIZATION,env-00000,n-00000,lkc-00000,1,100,,401,Client error responses: Unauthorized
+ORGANIZATION,env-00000,n-00000,lkc-00000,1,100,,403,Client error responses: Forbidden
+ORGANIZATION,env-00000,n-00000,lkc-00000,1,100,,429,Client error responses: Too Many Requests
+ORGANIZATION,env-00000,n-00000,lkc-00000,1,100,,500,Server error responses: Internal Server Error
+```

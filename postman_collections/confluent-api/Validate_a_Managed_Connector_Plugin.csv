@@ -1,0 +1,6 @@
+ plugin_name,environment_id,kafka_cluster_id,enim6_a,sint_2,statusCode,scenario
+io.confluent.connect.gcs.GcsSinkConnector,env-xxxx,lkc-xxxx,value,value,200,Successful responses: OK
+io.confluent.connect.gcs.GcsSinkConnector,env-xxxx,lkc-xxxx,value,value,401,Client error responses: Unauthorized
+io.confluent.connect.gcs.GcsSinkConnector,env-xxxx,lkc-xxxx,value,value,404,Client error responses: Not Found
+io.confluent.connect.gcs.GcsSinkConnector,env-xxxx,lkc-xxxx,value,value,429,Client error responses: Too Many Requests
+io.confluent.connect.gcs.GcsSinkConnector,env-xxxx,lkc-xxxx,value,value,500,Server error responses: Internal Server Error

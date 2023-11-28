@@ -1,0 +1,6 @@
+ cluster_id,statusCode,scenario
+Fds7TcT9TTqEXsoRLEKMcQ,200,Successful responses: OK
+CIL-69l7S1CwoVNAhoQLug,400,Client error responses: Bad Request
+CIL-69l7S1CwoVNAhoQLug,401,Client error responses: Unauthorized
+CIL-69l7S1CwoVNAhoQLug,429,Client error responses: Too Many Requests
+CIL-69l7S1CwoVNAhoQLug,500,Server error responses: Internal Server Error

@@ -1,0 +1,11 @@
+ include_authorized_operations,cluster_id,topic_name,statusCode,scenario
+Successful responses: OK,Successful responses: OK,Successful responses: OK,Successful responses: OK,Successful responses: OK,Successful responses: OK,Successful responses: OK
+cluster-1,cluster-1,cluster-1,cluster-1,cluster-1,cluster-1,cluster-1
+topic-1,topic-1,topic-1,topic-1,topic-1,topic-1,topic-1
+200,400,401,403,404,429,500
+{"\n  \"kind\": \"KafkaTopic\",\n  \"metadata\": {\n    \"self\": \"https://pkc-00000.region.provider.confluent.cloud/kafka/v3/clusters/cluster-1/topics/topic-1\",\n    \"resource_name\": \"crn:///kafka=cluster-1/topic=topic-1\"\n  },\n  \"cluster_id\": \"cluster-1\",\n  \"topic_name\": \"topic-1\",\n  \"is_internal\": false,\n  \"replication_factor\": 3,\n  \"partitions_count\": 1,\n  \"partitions\": {\n    \"related\": \"https://pkc-00000.region.provider.confluent.cloud/kafka/v3/clusters/cluster-1/topics/topic-1/partitions\"\n  },\n  \"configs\": {\n    \"related\": \"https://pkc-00000.region.provider.confluent.cloud/kafka/v3/clusters/cluster-1/topics/topic-1/configs\"\n  },\n  \"partition_reassignments\": {\n    \"related\": \"https://pkc-00000.region.provider.confluent.cloud/kafka/v3/clusters/cluster-1/topics/topic-1/partitions/-/reassignments\"\n  }\n}",
+"{\n  \"error_code\": 400,\n  \"message\": \"Cannot deserialize value of type `java.lang.Integer` from String \\\"A\\\": not a valid `java.lang.Integer` value\"\n}",
+"{\n  \"error_code\": 40101,\n  \"message\": \"Authentication failed\"\n}",
+"{\n  \"error_code\": 40301,\n  \"message\": \"Request is not authorized\"\n}",
+"{\n  \"error_code\": 404,\n  \"message\": \"HTTP 404 Not Found\"\n}",
+"{\n  \"error_code\": 500,\n  \"message\": \"Internal Server Error\"\n}"

@@ -1,0 +1,7 @@
+ cluster_id,name,value,statusCode,scenario
+c-1234,Test,value1,204,Successful responses: No Content
+c-1234,Test,value2,400,Client error responses: Bad Request
+c-1234,Test,value3,401,Client error responses: Unauthorized
+c-1234,Test,value4,403,Client error responses: Forbidden
+c-1234,Test,value5,429,Client error responses: Too Many Requests
+c-1234,Test,value6,500,Server error responses: Internal Server Error

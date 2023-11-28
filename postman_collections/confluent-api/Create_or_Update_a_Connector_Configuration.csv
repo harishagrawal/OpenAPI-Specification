@@ -1,0 +1,7 @@
+ connector_name,environment_id,kafka_cluster_id,connector.class,name,kafka.api.key,kafka.api.secret,confluent.connector.type,confluent.custom.plugin.id,confluent.custom.connection.endpoints,confluent.custom.schema.registry.auto,statusCode,scenario
+MyGcsLogsBucketConnector,env-xxxxx,lkc-xxxxx,GcsSink,MyGcsLogsBucketConnector,****************,****************,sink,,[https://psrc-xxxxx.us-west-2.aws.confluent.cloud],false,201,Successful responses: Created
+MyGcsLogsBucketConnector,env-xxxxx,lkc-xxxxx,GcsSink,MyGcsLogsBucketConnector,****************,****************,sink,,[https://psrc-xxxxx.us-west-2.aws.confluent.cloud],false,400,Client error responses: Bad Request
+MyGcsLogsBucketConnector,env-xxxxx,lkc-xxxxx,GcsSink,MyGcsLogsBucketConnector,****************,****************,sink,,[https://psrc-xxxxx.us-west-2.aws.confluent.cloud],false,401,Client error responses: Unauthorized
+MyGcsLogsBucketConnector,env-xxxxx,lkc-xxxxx,GcsSink,MyGcsLogsBucketConnector,****************,****************,sink,,[https://psrc-xxxxx.us-west-2.aws.confluent.cloud],false,404,Client error responses: Not Found
+MyGcsLogsBucketConnector,env-xxxxx,lkc-xxxxx,GcsSink,MyGcsLogsBucketConnector,****************,****************,sink,,[https://psrc-xxxxx.us-west-2.aws.confluent.cloud],false,429,Client error responses: Too Many Requests
+MyGcsLogsBucketConnector,env-xxxxx,lkc-xxxxx,GcsSink,MyGcsLogsBucketConnector,****************,****************,sink,,[https://psrc-xxxxx.us-west-2.aws.confluent.cloud],false,500,Server error responses: Internal Server Error

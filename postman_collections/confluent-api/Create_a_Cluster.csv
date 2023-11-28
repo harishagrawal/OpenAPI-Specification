@@ -1,0 +1,9 @@
+ spec,value,statusCode,scenario
+Successful responses: Accepted,{{spec}},202,Successful responses: Accepted
+Client error responses: Bad Request,{{spec}},400,Client error responses: Bad Request
+Client error responses: Unauthorized,{{spec}},401,Client error responses: Unauthorized
+Client error responses: Forbidden,{{spec}},403,Client error responses: Forbidden
+Client error responses: Conflict,{{spec}},409,Client error responses: Conflict
+Client error responses: Unprocessable Entity,{{spec}},422,Client error responses: Unprocessable Entity
+Client error responses: Too Many Requests,{{spec}},429,Client error responses: Too Many Requests
+Server error responses: Internal Server Error,{{spec}},500,Server error responses: Internal Server Error

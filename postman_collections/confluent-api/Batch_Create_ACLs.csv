@@ -1,0 +1,7 @@
+ cluster_id,value,statusCode,scenario
+cluster_id_1,Successful responses: Created,201,Successful responses: Created
+cluster_id_2,Client error responses: Bad Request,400,Client error responses: Bad Request
+cluster_id_3,Client error responses: Unauthorized,401,Client error responses: Unauthorized
+cluster_id_4,Client error responses: Forbidden,403,Client error responses: Forbidden
+cluster_id_5,Client error responses: Too Many Requests,429,Client error responses: Too Many Requests
+cluster_id_6,Server error responses: Internal Server Error,500,Server error responses: Internal Server Error

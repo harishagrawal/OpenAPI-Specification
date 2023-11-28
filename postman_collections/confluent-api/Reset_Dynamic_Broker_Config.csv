@@ -1,0 +1,7 @@
+ cluster_id,name,statusCode,scenario
+cluster_1,ComputePool1,204,Successful responses: No Content
+cluster_2,ComputePool2,400,Client error responses: Bad Request
+cluster_3,ComputePool3,401,Client error responses: Unauthorized
+cluster_4,ComputePool4,403,Client error responses: Forbidden
+cluster_5,ComputePool5,429,Client error responses: Too Many Requests
+cluster_6,ComputePool6,500,Server error responses: Internal Server Error

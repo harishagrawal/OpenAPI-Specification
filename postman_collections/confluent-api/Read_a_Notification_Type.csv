@@ -1,0 +1,8 @@
+ id,statusCode,scenario
+1000,"200","Successful responses: OK"
+1001,"400","Client error responses: Bad Request"
+1002,"401","Client error responses: Unauthorized"
+1003,"403","Client error responses: Forbidden"
+1004,"404","Client error responses: Not Found"
+1005,"429","Client error responses: Too Many Requests"
+1006,"500","Server error responses: Internal Server Error"

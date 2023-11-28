@@ -1,0 +1,6 @@
+ cluster_id,link_name,statusCode,scenario
+v-0Ce-CkTyKQol9v46LaCQ,link-nb-1,200,Successful responses: OK
+1Rh_4htxSuen7RYGvGmgNw,link-db-1,400,Client error responses: Bad Request
+1Rh_4htxSuen7RYGvGmgNw,my-new-link-1,401,Client error responses: Unauthorized
+1Rh_4htxSuen7RYGvGmgNw,my-new-link-1,429,Client error responses: Too Many Requests
+1Rh_4htxSuen7RYGvGmgNw,my-new-link-1,500,Server error responses: Internal Server Error
