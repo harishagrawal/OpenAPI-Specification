@@ -1,0 +1,2 @@
+ validate_only,cluster_id,link_name,0,1,mirror_topic_name_pattern,statusCode,scenario
+crn:///kafka=cluster-1,cluster-1,link-1,Successful responses: OK,400,Client error responses: Bad Request,Client error responses: Unauthorized,Client error responses: Too Many Requests,Client error responses: Internal Server Error

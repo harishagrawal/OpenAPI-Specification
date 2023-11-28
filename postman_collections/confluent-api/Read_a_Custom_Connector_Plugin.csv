@@ -1,0 +1,8 @@
+ id,statusCode,scenario
+<No data>,200,Successful responses: OK
+<No data>,400,Client error responses: Bad Request
+<No data>,401,Client error responses: Unauthorized
+<No data>,403,Client error responses: Forbidden
+<No data>,404,Client error responses: Not Found
+<No data>,429,Client error responses: Too Many Requests
+<No data>,500,Server error responses: Internal Server Error

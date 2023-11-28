@@ -1,0 +1,10 @@
+ provider_id,statusCode,scenario
+e0014265-b0a5-4990-a099-11e2650e10f5,201,Successful responses: Created
+e0014265-b0a5-4990-a099-11e2650e10f5,400,Client error responses: Bad Request
+e0014265-b0a5-4990-a099-11e2650e10f5,401,Client error responses: Unauthorized
+e0014265-b0a5-4990-a099-11e2650e10f5,402,Client error responses: Payment Required
+e0014265-b0a5-4990-a099-11e2650e10f5,403,Client error responses: Forbidden
+e0014265-b0a5-4990-a099-11e2650e10f5,409,Client error responses: Conflict
+e0014265-b0a5-4990-a099-11e2650e10f5,422,Client error responses: Unprocessable Entity
+e0014265-b0a5-4990-a099-11e2650e10f5,429,Client error responses: Too Many Requests
+e0014265-b0a5-4990-a099-11e2650e10f5,500,Server error responses: Internal Server Error

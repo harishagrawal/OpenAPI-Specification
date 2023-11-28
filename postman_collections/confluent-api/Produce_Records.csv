@@ -1,0 +1,11 @@
+ cluster_id,topic_name,partition_id,value,timestamp,statusCode,scenario
+cluster-1,topic-1,1,value1,2021-02-05T19:14:42Z,200,Successful responses: OK
+cluster-1,topic-1,1,value2,2021-02-05T19:14:42Z,400,Client error responses: Bad Request
+cluster-1,topic-1,1,value3,2021-02-05T19:14:42Z,401,Client error responses: Unauthorized
+cluster-1,topic-1,1,value4,2021-02-05T19:14:42Z,403,Client error responses: Forbidden
+cluster-1,topic-1,1,value5,2021-02-05T19:14:42Z,404,Client error responses: Not Found
+cluster-1,topic-1,1,value6,2021-02-05T19:14:42Z,413,Client error responses: Request Too Long
+cluster-1,topic-1,1,value7,2021-02-05T19:14:42Z,415,Client error responses: Unsupported Media Type
+cluster-1,topic-1,1,value8,2021-02-05T19:14:42Z,422,Client error responses: Unprocessable Entity
+cluster-1,topic-1,1,value9,2021-02-05T19:14:42Z,429,Client error responses: Too Many Requests
+cluster-1,topic-1,1,value10,2021-02-05T19:14:42Z,500,Server error responses: Internal Server Error

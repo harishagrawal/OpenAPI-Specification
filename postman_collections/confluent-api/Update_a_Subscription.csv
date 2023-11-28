@@ -1,0 +1,9 @@
+ id,value,current_state,statusCode,scenario
+11111,Successful responses: OK,ENABLED,200,Successful responses: OK
+22222,Client error responses: Bad Request,ENABLED,400,Client error responses: Bad Request
+33333,Client error responses: Unauthorized,ENABLED,401,Client error responses: Unauthorized
+44444,Client error responses: Forbidden,ENABLED,403,Client error responses: Forbidden
+55555,Client error responses: Not Found,ENABLED,404,Client error responses: Not Found
+66666,Client error responses: Unprocessable Entity,ENABLED,422,Client error responses: Unprocessable Entity
+77777,Client error responses: Too Many Requests,ENABLED,429,Client error responses: Too Many Requests
+88888,Server error responses: Internal Server Error,ENABLED,500,Server error responses: Internal Server Error

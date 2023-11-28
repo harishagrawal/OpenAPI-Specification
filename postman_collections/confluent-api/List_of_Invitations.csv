@@ -1,0 +1,7 @@
+ email,status,user,creator,page_size,page_token,statusCode,scenario
+johndoe@confluent.io,ACTIVE,jsmith,aroth,100,eyJhY3Rpb24iOiJMaXN0IiwidGFyZ2V0IjoiY2xvdWQiLCJwYXlsb2FkIjp7InNpemUiOjEwMH19,200,Successful responses: OK
+janedoe@confluent.io,INACTIVE,jondoe,rwill,50,eyJhY3Rpb24iOiJMaXN0IiwidGFyZ2V0IjoiY2xvdWQiLCJwYXlsb2FkIjp7InNpemUiOjUwfX0s400,Client error responses: Bad Request
+joedoe@confluent.io,ACTIVE,jondoe,aroth,200,eyJhY3Rpb24iOiJMaXN0IiwidGFyZ2V0IjoiY2xvdWQiLCJwYXlsb2FkIjp7InNpemUiOjIwfX0s401,Client error responses: Unauthorized
+janedoe@confluent.io,ACTIVE,jsmith,aroth,100,eyJhY3Rpb24iOiJMaXN0IiwidGFyZ2V0IjoiY2xvdWQiLCJwYXlsb2FkIjp7InNpemUiOjEwMH19,403,Client error responses: Forbidden
+janedoe@confluent.io,ACTIVE,jsmith,aroth,100,eyJhY3Rpb24iOiJMaXN0IiwidGFyZ2V0IjoiY2xvdWQiLCJwYXlsb2FkIjp7InNpemUiOjEwMH19,429,Client error responses: Too Many Requests
+janedoe@confluent.io,ACTIVE,jsmith,aroth,100,eyJhY3Rpb24iOiJMaXN0IiwidGFyZ2V0IjoiY2xvdWQiLCJwYXlsb2FkIjp7InNpemUiOjEwMH19,500,Server error responses: Internal Server Error

@@ -1,0 +1,6 @@
+ environment_id,kafka_cluster_id,name,connector.class,kafka.api.key,kafka.api.secret,confluent.connector.type,confluent.custom.plugin.id,confluent.custom.connection.endpoints,confluent.custom.schema.registry.auto,statusCode,scenario
+env-xxxxx,lkc-xxxxx,MyGcsLogsBucketConnector,GcsSink,****************,****************,sink,,[""https://gcs-xxxx.storage.googleapis.com""],false,201,Successful responses: Created
+env-xxxxx,lkc-xxxxx,MyGcsLogsBucketConnector,GcsSink,****************,****************,sink,,[""https://gcs-xxxx.storage.googleapis.com""],false,400,Client error responses: Bad Request
+env-xxxxx,lkc-xxxxx,MyGcsLogsBucketConnector,GcsSink,****************,****************,sink,,[""https://gcs-xxxx.storage.googleapis.com""],false,401,Client error responses: Unauthorized
+env-xxxxx,lkc-xxxxx,MyGcsLogsBucketConnector,GcsSink,****************,****************,sink,,[""https://gcs-xxxx.storage.googleapis.com""],false,429,Client error responses: Too Many Requests
+env-xxxxx,lkc-xxxxx,MyGcsLogsBucketConnector,GcsSink,****************,****************,sink,,[""https://gcs-xxxx.storage.googleapis.com""],false,500,Server error responses: Internal Server Error

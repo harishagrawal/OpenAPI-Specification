@@ -1,0 +1,6 @@
+ cluster_id,topic_name,name,value,statusCode,scenario
+cluster-1,topic-1,error_code,400,Client error responses: Bad Request
+cluster-1,topic-1,error_code,40101,Client error responses: Unauthorized
+cluster-1,topic-1,error_code,40301,Client error responses: Forbidden
+cluster-1,topic-1,error_code,404,Client error responses: Not Found
+cluster-1,topic-1,error_code,500,Server error responses: Internal Server Error

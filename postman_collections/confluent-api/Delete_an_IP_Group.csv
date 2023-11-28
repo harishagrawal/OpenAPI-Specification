@@ -1,0 +1,8 @@
+ id,statusCode,scenario
+1,204,No Content
+2,400,Bad Request
+3,401,Unauthorized
+4,403,Forbidden
+5,404,Not Found
+6,429,Too Many Requests
+7,500,Internal Server Error

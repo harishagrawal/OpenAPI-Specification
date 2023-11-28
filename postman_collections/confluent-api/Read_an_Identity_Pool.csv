@@ -1,0 +1,8 @@
+ provider_id,id,statusCode,scenario
+p-abc123,abc123,200,Successful responses: OK
+p-abc123,abc123,400,Client error responses: Bad Request
+p-abc123,abc123,401,Client error responses: Unauthorized
+p-abc123,abc123,403,Client error responses: Forbidden
+p-abc123,abc123,404,Client error responses: Not Found
+p-abc123,abc123,429,Client error responses: Too Many Requests
+p-abc123,abc123,500,Server error responses: Internal Server Error

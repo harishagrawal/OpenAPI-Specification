@@ -1,0 +1,10 @@
+ id,value,display_name,description,statusCode,scenario
+2d7125d2-1e6a-42f2-b866-69c9405e53a4,Successful responses: OK,api_version,The version of the API.,200,Successful responses: OK
+2d7125d2-1e6a-42f2-b866-69c9405e53a4,Client error responses: Bad Request,kind,The kind name of the resource.,400,Client error responses: Bad Request
+2d7125d2-1e6a-42f2-b866-69c9405e53a4,Client error responses: Unauthorized,id,The unique identifier of the resource.,401,Client error responses: Unauthorized
+2d7125d2-1e6a-42f2-b866-69c9405e53a4,Client error responses: Payment Required,target,The target of the resource.,402,Client error responses: Payment Required
+2d7125d2-1e6a-42f2-b866-69c9405e53a4,Client error responses: Forbidden,display_name,The display name of the resource.,403,Client error responses: Forbidden
+2d7125d2-1e6a-42f2-b866-69c9405e53a4,Client error responses: Not Found,description,The description of the resource.,404,Client error responses: Not Found
+2d7125d2-1e6a-42f2-b866-69c9405e53a4,Client error responses: Unprocessable Entity,metadata,The metadata of the resource.,422,Client error responses: Unprocessable Entity
+2d7125d2-1e6a-42f2-b866-69c9405e53a4,Client error responses: Too Many Requests,statusCode,The HTTP status code of the response.,429,Client error responses: Too Many Requests
+2d7125d2-1e6a-42f2-b866-69c9405e53a4,Server error responses: Internal Server Error,scenario,The scenario under which the response is returned.,500,Server error responses: Internal Server Error

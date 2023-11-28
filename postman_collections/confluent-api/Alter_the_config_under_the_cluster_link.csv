@@ -1,0 +1,6 @@
+ cluster_id,link_name,config_name,value,statusCode,scenario
+a7986e11-06b1-452e-9917-82d256e8b358,link-sb1,,204,Successful responses: No Content
+a7986e11-06b1-452e-9917-82d256e8b358,link-sb1,,400,Client error responses: Bad Request
+a7986e11-06b1-452e-9917-82d256e8b358,link-sb1,,401,Client error responses: Unauthorized
+a7986e11-06b1-452e-9917-82d256e8b358,link-sb1,,429,Client error responses: Too Many Requests
+a7986e11-06b1-452e-9917-82d256e8b358,link-sb1,,500,Server error responses: Internal Server Error

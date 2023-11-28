@@ -1,0 +1,6 @@
+ environment_id,kafka_cluster_id,statusCode,scenario
+env-n35b8,lkc-xxxxxxxxx,200,Successful responses: OK
+env-n35b8,lkc-xxxxxxxxx,401,Client error responses: Unauthorized
+env-n35b8,lkc-xxxxxxxxx,404,Client error responses: Not Found
+env-n35b8,lkc-xxxxxxxxx,429,Client error responses: Too Many Requests
+env-n35b8,lkc-xxxxxxxxx,500,Server error responses: Internal Server Error

@@ -1,0 +1,8 @@
+ dry_run,value,given_name,email,statusCode,scenario
+0,{{value}},95250800,false,201,Successful responses: Created
+0,{{value}},95250800,false,400,Client error responses: Bad Request
+0,{{value}},95250800,false,401,Client error responses: Unauthorized
+0,{{value}},95250800,false,403,Client error responses: Forbidden
+0,{{value}},95250800,false,409,Client error responses: Conflict
+0,{{value}},95250800,false,429,Client error responses: Too Many Requests
+0,{{value}},95250800,false,500,Server error responses: Internal Server Error

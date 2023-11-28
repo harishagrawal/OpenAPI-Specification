@@ -1,0 +1,6 @@
+ connector_name,environment_id,kafka_cluster_id,statusCode,scenario
+connector-name-1,env-111aaa,lkc-111aaa,200,Successful responses: OK
+connector-name-2,env-111aaa,lkc-111aaa,401,Client error responses: Unauthorized
+connector-name-3,env-111aaa,lkc-111aaa,404,Client error responses: Not Found
+connector-name-4,env-111aaa,lkc-111aaa,429,Client error responses: Too Many Requests
+connector-name-5,env-111aaa,lkc-111aaa,500,Server error responses: Internal Server Error

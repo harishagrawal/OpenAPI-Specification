@@ -1,0 +1,6 @@
+ expand,environment_id,kafka_cluster_id,statusCode,scenario
+expand,env-xxxxx,lkc-xxxxx,200,Successful responses: OK
+expand,env-xxxxx,lkc-xxxxx,401,Client error responses: Unauthorized
+expand,env-xxxxx,lkc-xxxxx,404,Client error responses: Not Found
+expand,env-xxxxx,lkc-xxxxx,429,Client error responses: Too Many Requests
+expand,env-xxxxx,lkc-xxxxx,500,Server error responses: Internal Server Error

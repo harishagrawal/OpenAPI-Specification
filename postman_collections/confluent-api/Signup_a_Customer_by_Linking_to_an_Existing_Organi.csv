@@ -1,0 +1,9 @@
+ CSVHeader,CSVHeader
+dry_run,token,value,statusCode,scenario
+false,{{token}},Successful responses: Created,201
+false,{{token}},Client error responses: Bad Request,400
+false,{{token}},Client error responses: Unauthorized,401
+false,{{token}},Client error responses: Forbidden,403
+false,{{token}},Client error responses: Conflict,409
+false,{{token}},Client error responses: Too Many Requests,429
+false,{{token}},Server error responses: Internal Server Error,500
