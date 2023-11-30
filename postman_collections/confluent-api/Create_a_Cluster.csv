@@ -1,0 +1,10 @@
+ spec,value,statusCode,scenario
+<Error: Too many levels of nesting to fake this schema>,202,Successful responses: Accepted
+<Error: Too many levels of nesting to fake this schema>,400,Client error responses: Bad Request
+<Error: Too many levels of nesting to fake this schema>,401,Client error responses: Unauthorized
+<Error: Too many levels of nesting to fake this schema>,402,Client error responses: Payment Required
+<Error: Too many levels of nesting to fake this schema>,403,Client error responses: Forbidden
+<Error: Too many levels of nesting to fake this schema>,409,Client error responses: Conflict
+<Error: Too many levels of nesting to fake this schema>,422,Client error responses: Unprocessable Entity
+<Error: Too many levels of nesting to fake this schema>,429,Client error responses: Too Many Requests
+<Error: Too many levels of nesting to fake this schema>,500,Server error responses: Internal Server Error

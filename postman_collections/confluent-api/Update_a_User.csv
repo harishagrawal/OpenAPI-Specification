@@ -1,0 +1,10 @@
+ id,value,full_name,statusCode,scenario
+1234567890,value1,Marty McFly,200,Successful responses: OK
+1234567891,value2,Marty McFly,400,Client error responses: Bad Request
+1234567892,value3,Marty McFly,401,Client error responses: Unauthorized
+1234567893,value4,Marty McFly,402,Client error responses: Payment Required
+1234567894,value5,Marty McFly,403,Client error responses: Forbidden
+1234567895,value6,Marty McFly,404,Client error responses: Not Found
+1234567896,value7,Marty McFly,422,Client error responses: Unprocessable Entity
+1234567897,value8,Marty McFly,429,Client error responses: Too Many Requests
+1234567898,value9,Marty McFly,500,Server error responses: Internal Server Error

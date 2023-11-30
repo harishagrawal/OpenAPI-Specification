@@ -1,0 +1,2 @@
+ cluster_id,topic_name,name,statusCode,scenario
+cluster-00000,topic-00000,Successful responses: No Content,204,cluster-00000,topic-00000,Client error responses: Bad Request,400,cluster-00000,topic-00000,Client error responses: Unauthorized,401,cluster-00000,topic-00000,Client error responses: Forbidden,403,cluster-00000,topic-00000,Client error responses: Not Found,404,cluster-00000,topic-00000,Client error responses: Too Many Requests,429,cluster-00000,topic-00000,Server error responses: Internal Server Error,500

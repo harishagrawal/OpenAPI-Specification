@@ -1,0 +1,9 @@
+```
+organization.id,page_size,page_token,statusCode,scenario
+b3a17773-05cc-4431-9560-433fb4613da8,100,,200,Successful responses: OK
+b3a17773-05cc-4431-9560-433fb4613da8,100,,400,Client error responses: Bad Request
+b3a17773-05cc-4431-9560-433fb4613da8,100,,401,Client error responses: Unauthorized
+b3a17773-05cc-4431-9560-433fb4613da8,100,,403,Client error responses: Forbidden
+b3a17773-05cc-4431-9560-433fb4613da8,100,,429,Client error responses: Too Many Requests
+b3a17773-05cc-4431-9560-433fb4613da8,100,,500,Server error responses: Internal Server Error
+```

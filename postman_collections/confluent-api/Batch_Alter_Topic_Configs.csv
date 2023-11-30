@@ -1,0 +1,8 @@
+ cluster_id,topic_name,value,validate_only,statusCode,scenario
+cluster-1,topic-1,value-1,false,204,Successful responses: No Content
+cluster-1,topic-1,value-2,false,400,Client error responses: Bad Request
+cluster-1,topic-1,value-3,false,401,Client error responses: Unauthorized
+cluster-1,topic-1,value-4,false,403,Client error responses: Forbidden
+cluster-1,topic-1,value-5,false,404,Client error responses: Not Found
+cluster-1,topic-1,value-6,false,429,Client error responses: Too Many Requests
+cluster-1,topic-1,value-7,false,500,Server error responses: Internal Server Error

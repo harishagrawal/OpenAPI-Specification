@@ -1,0 +1,6 @@
+ validate_only,cluster_id,link_name,0,1,mirror_topic_name_pattern,statusCode,scenario
+Successful responses: OK,,200,,
+Client error responses: Bad Request,,400,,
+Client error responses: Unauthorized,,401,,
+Client error responses: Too Many Requests,,429,,
+Server error responses: Internal Server Error,,500,,

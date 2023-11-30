@@ -1,0 +1,8 @@
+ page_size,page_token,statusCode,scenario
+20,first,,Successful responses: OK
+20,next,200,Successful responses: OK
+20,previous,400,Client error responses: Bad Request
+20,last,401,Client error responses: Unauthorized
+20,first,403,Client error responses: Forbidden
+20,next,429,Client error responses: Too Many Requests
+20,previous,500,Server error responses: Internal Server Error

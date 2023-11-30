@@ -1,0 +1,9 @@
+```
+plugin_name,environment_id,kafka_cluster_id,aliquip9af,consectetur1c,statusCode,scenario
+io.confluent.connect.gcs.GcsSinkConnector,,Successful responses: OK
+io.confluent.connect.gcs.GcsSinkConnector,,Client error responses: Unauthorized
+io.confluent.connect.gcs.GcsSinkConnector,,Client error responses: Not Found
+io.confluent.connect.gcs.GcsSinkConnector,,Client error responses: Too Many Requests
+io.confluent.connect.gcs.GcsSinkConnector,,Server error responses: Internal Server Error
+
+```

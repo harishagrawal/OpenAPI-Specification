@@ -1,0 +1,7 @@
+ cluster_id,name,value,statusCode,scenario
+cluster_id-12345,Kafka,value-1,204,Successful responses: No Content
+cluster_id-12345,Kafka,value-2,400,Client error responses: Bad Request
+cluster_id-12345,Kafka,value-3,401,Client error responses: Unauthorized
+cluster_id-12345,Kafka,value-4,403,Client error responses: Forbidden
+cluster_id-12345,Kafka,value-5,429,Client error responses: Too Many Requests
+cluster_id-12345,Kafka,value-6,500,Server error responses: Internal Server Error

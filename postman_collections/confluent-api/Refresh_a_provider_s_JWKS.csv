@@ -1,0 +1,9 @@
+ provider_id,value,statusCode,scenario
+{{provider_id}},{{value}},200,Successful responses: OK
+{{provider_id}},{{value}},400,Client error responses: Bad Request
+{{provider_id}},{{value}},401,Client error responses: Unauthorized
+{{provider_id}},{{value}},403,Client error responses: Forbidden
+{{provider_id}},{{value}},404,Client error responses: Not Found
+{{provider_id}},{{value}},422,Client error responses: Unprocessable Entity
+{{provider_id}},{{value}},429,Client error responses: Too Many Requests
+{{provider_id}},{{value}},500,Server error responses: Internal Server Error

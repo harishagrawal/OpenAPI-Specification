@@ -1,0 +1,11 @@
+```
+organization_id,statusCode,scenario
+b3a17773-05cc-4431-9560-433fb4613da8,201,Successful responses: Created
+b3a17773-05cc-4431-9560-433fb4613da8,400,Client error responses: Bad Request
+b3a17773-05cc-4431-9560-433fb4613da8,401,Client error responses: Unauthorized
+b3a17773-05cc-4431-9560-433fb4613da8,403,Client error responses: Forbidden
+b3a17773-05cc-4431-9560-433fb4613da8,409,Client error responses: Conflict
+b3a17773-05cc-4431-9560-433fb4613da8,429,Client error responses: Too Many Requests
+b3a17773-05cc-4431-9560-433fb4613da8,500,Server error responses: Internal Server Error
+
+```

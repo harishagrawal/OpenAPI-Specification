@@ -1,0 +1,7 @@
+ connector_name,environment_id,kafka_cluster_id,connector.class,name,kafka.api.key,kafka.api.secret,confluent.connector.type,confluent.custom.plugin.id,confluent.custom.connection.endpoints,confluent.custom.schema.registry.auto,statusCode,scenario
+MyGcsLogsBucketConnector,env-00000,lkc-00000,GcsSink,MyGcsLogsBucketConnector,****************,****************,sink,,[""],auto,201,Successful responses: Created
+MyGcsLogsBucketConnector,env-00000,lkc-00000,GcsSink,MyGcsLogsBucketConnector,****************,****************,sink,,[""],auto,400,Client error responses: Bad Request
+MyGcsLogsBucketConnector,env-00000,lkc-00000,GcsSink,MyGcsLogsBucketConnector,****************,****************,sink,,[""],auto,401,Client error responses: Unauthorized
+MyGcsLogsBucketConnector,env-00000,lkc-00000,GcsSink,MyGcsLogsBucketConnector,****************,****************,sink,,[""],auto,404,Client error responses: Not Found
+MyGcsLogsBucketConnector,env-00000,lkc-00000,GcsSink,MyGcsLogsBucketConnector,****************,****************,sink,,[""],auto,429,Client error responses: Too Many Requests
+MyGcsLogsBucketConnector,env-00000,lkc-00000,GcsSink,MyGcsLogsBucketConnector,****************,****************,sink,,[""],auto,500,Server error responses: Internal Server Error

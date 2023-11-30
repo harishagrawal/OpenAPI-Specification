@@ -1,0 +1,10 @@
+ provider_id,statusCode,scenario
+p-abc123,201,Successful responses: Created
+p-abc123,400,Client error responses: Bad Request
+p-abc123,401,Client error responses: Unauthorized
+p-abc123,402,Client error responses: Payment Required
+p-abc123,403,Client error responses: Forbidden
+p-abc123,409,Client error responses: Conflict
+p-abc123,422,Client error responses: Unprocessable Entity
+p-abc123,429,Client error responses: Too Many Requests
+p-abc123,500,Server error responses: Internal Server Error

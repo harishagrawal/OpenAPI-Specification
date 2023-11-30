@@ -1,0 +1,6 @@
+ cluster_id,link_name,config_name,value,statusCode,scenario
+lkc-xxxxx,link-sb1,max_environments.per_org,204,No Content,Successful responses
+lkc-xxxxx,link-sb1,max_environments.per_org,400,"Bad Request,Client error responses
+lkc-xxxxx,link-sb1,max_environments.per_org,401,"Unauthorized,Client error responses
+lkc-xxxxx,link-sb1,max_environments.per_org,429,"Too Many Requests,Client error responses
+lkc-xxxxx,link-sb1,max_environments.per_org,500,"Internal Server Error,Server error responses

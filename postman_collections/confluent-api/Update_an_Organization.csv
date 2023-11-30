@@ -1,0 +1,10 @@
+ id,value,display_name,jit_enabled,statusCode,scenario
+1,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,200,Successful responses: OK
+2,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,400,Client error responses: Bad Request
+3,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,401,Client error responses: Unauthorized
+4,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,402,Client error responses: Payment Required
+5,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,403,Client error responses: Forbidden
+6,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,404,Client error responses: Not Found
+7,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,422,Client error responses: Unprocessable Entity
+8,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,429,Client error responses: Too Many Requests
+9,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,<Error: Too many levels of nesting to fake this schema>,500,Server error responses: Internal Server Error

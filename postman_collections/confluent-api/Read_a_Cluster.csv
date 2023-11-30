@@ -1,0 +1,8 @@
+ environment,id,statusCode,scenario
+prod,env-00000,200,Successful responses: OK
+prod,env-00000,400,Client error responses: Bad Request
+prod,env-00000,401,Client error responses: Unauthorized
+prod,env-00000,403,Client error responses: Forbidden
+prod,env-00000,404,Client error responses: Not Found
+prod,env-00000,429,Client error responses: Too Many Requests
+prod,env-00000,500,Server error responses: Internal Server Error

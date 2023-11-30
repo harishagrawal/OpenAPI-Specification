@@ -1,0 +1,10 @@
+ id,value,display_name,description,statusCode,scenario
+1000,Successful responses: OK,value,display_name,description,200,Successful responses: OK
+1001,Client error responses: Bad Request,value,display_name,description,400,Client error responses: Bad Request
+1002,Client error responses: Unauthorized,value,display_name,description,401,Client error responses: Unauthorized
+1003,Client error responses: Payment Required,value,display_name,description,402,Client error responses: Payment Required
+1004,Client error responses: Forbidden,value,display_name,description,403,Client error responses: Forbidden
+1005,Client error responses: Not Found,value,display_name,description,404,Client error responses: Not Found
+1006,Client error responses: Unprocessable Entity,value,display_name,description,422,Client error responses: Unprocessable Entity
+1007,Client error responses: Too Many Requests,value,display_name,description,429,Client error responses: Too Many Requests
+1008,Server error responses: Internal Server Error,value,display_name,description,500,Server error responses: Internal Server Error

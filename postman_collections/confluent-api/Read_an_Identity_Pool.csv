@@ -1,0 +1,8 @@
+ provider_id,id,statusCode,scenario
+provider_id_1,id_1,200,Successful responses: OK
+provider_id_1,id_2,400,Client error responses: Bad Request
+provider_id_1,id_3,401,Client error responses: Unauthorized
+provider_id_1,id_4,403,Client error responses: Forbidden
+provider_id_1,id_5,404,Client error responses: Not Found
+provider_id_1,id_6,429,Client error responses: Too Many Requests
+provider_id_1,id_7,500,Server error responses: Internal Server Error

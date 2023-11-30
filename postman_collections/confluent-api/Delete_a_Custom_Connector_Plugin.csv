@@ -1,0 +1,8 @@
+ id,statusCode,scenario
+id-1,204,Successful responses: No Content 
+id-2,400,Client error responses: Bad Request
+id-3,401,Client error responses: Unauthorized 
+id-4,403,Client error responses: Forbidden 
+id-5,404,Client error responses: Not Found
+id-6,429,Client error responses: Too Many Requests 
+id-7,500,Server error responses: Internal Server Error

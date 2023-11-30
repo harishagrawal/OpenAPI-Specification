@@ -1,0 +1,5 @@
+```
+resource_type,resource_name,pattern_type,principal,host,operation,permission,cluster_id,statusCode,scenario
+TOPIC,topic-,PREFIXED,User:alice,*,ALL,ALLOW,,200,Successful responses: OK
+CLUSTER,kafka-cluster,LITERAL,User:alice,*,DESCRIBE,DENY,,400,Client error responses: Bad Request
+```
