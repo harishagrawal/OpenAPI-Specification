@@ -1,0 +1,10 @@
+ id,value,display_name,description,filter,statusCode,scenario
+11111111-2222-3333-4444-555555555555,value 1,display name 1,description 1,filter 1,200,Successful responses: OK
+11111111-2222-3333-4444-555555555555,value 2,display name 2,description 2,filter 2,400,Client error responses: Bad Request
+11111111-2222-3333-4444-555555555555,value 3,display name 3,description 3,filter 3,401,Client error responses: Unauthorized
+11111111-2222-3333-4444-555555555555,value 4,display name 4,description 4,filter 4,402,Client error responses: Payment Required
+11111111-2222-3333-4444-555555555555,value 5,display name 5,description 5,filter 5,403,Client error responses: Forbidden
+11111111-2222-3333-4444-555555555555,value 6,display name 6,description 6,filter 6,404,Client error responses: Not Found
+11111111-2222-3333-4444-555555555555,value 7,display name 7,description 7,filter 7,422,Client error responses: Unprocessable Entity
+11111111-2222-3333-4444-555555555555,value 8,display name 8,description 8,filter 8,429,Client error responses: Too Many Requests
+11111111-2222-3333-4444-555555555555,value 9,display name 9,description 9,filter 9,500,Server error responses: Internal Server Error

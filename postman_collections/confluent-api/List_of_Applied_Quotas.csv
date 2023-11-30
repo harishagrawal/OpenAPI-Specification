@@ -1,0 +1,7 @@
+ scope,environment,network,kafka_cluster,id,page_size,page_token,statusCode,scenario
+ORG,env-00000,n-00000,lkc-00000,1,10,eyJzdGFydGVyIjoiYSIsInVwZGF0ZSI6bnVsbCwiZGVzY2VuZCI6bnVsbH0=,200,Successful responses: OK
+ORG,env-00000,n-00000,lkc-00000,1,10,eyJzdGFydGVyIjoiYSIsInVwZGF0ZSI6bnVsbCwiZGVzY2VuZCI6bnVsbH0=,400,Client error responses: Bad Request
+ORG,env-00000,n-00000,lkc-00000,1,10,eyJzdGFydGVyIjoiYSIsInVwZGF0ZSI6bnVsbCwiZGVzY2VuZCI6bnVsbH0=,401,Client error responses: Unauthorized
+ORG,env-00000,n-00000,lkc-00000,1,10,eyJzdGFydGVyIjoiYSIsInVwZGF0ZSI6bnVsbCwiZGVzY2VuZCI6bnVsbH0=,403,Client error responses: Forbidden
+ORG,env-00000,n-00000,lkc-00000,1,10,eyJzdGFydGVyIjoiYSIsInVwZGF0ZSI6bnVsbCwiZGVzY2VuZCI6bnVsbH0=,429,Client error responses: Too Many Requests
+ORG,env-00000,n-00000,lkc-00000,1,10,eyJzdGFydGVyIjoiYSIsInVwZGF0ZSI6bnVsbCwiZGVzY2VuZCI6bnVsbH0=,500,Server error responses: Internal Server Error

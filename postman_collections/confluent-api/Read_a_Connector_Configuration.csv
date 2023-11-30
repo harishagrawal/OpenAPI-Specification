@@ -1,0 +1,6 @@
+ connector_name,environment_id,kafka_cluster_id,statusCode,scenario
+MyGcsLogsBucketConnector,,lkc-xxxxx,200,Successful responses: OK
+MyGcsLogsBucketConnector,,lkc-xxxxx,401,Client error responses: Unauthorized
+MyGcsLogsBucketConnector,,lkc-xxxxx,404,Client error responses: Not Found
+MyGcsLogsBucketConnector,,lkc-xxxxx,429,Client error responses: Too Many Requests
+MyGcsLogsBucketConnector,,lkc-xxxxx,500,Server error responses: Internal Server Error

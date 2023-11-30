@@ -1,0 +1,8 @@
+ environment,network,kafka_cluster,id,statusCode,scenario
+test,test,test,test,200,Successful responses: OK
+test,test,test,test,400,Client error responses: Bad Request
+test,test,test,test,401,Client error responses: Unauthorized
+test,test,test,test,403,Client error responses: Forbidden
+test,test,test,test,404,Client error responses: Not Found
+test,test,test,test,429,Client error responses: Too Many Requests
+test,test,test,test,500,Server error responses: Internal Server Error

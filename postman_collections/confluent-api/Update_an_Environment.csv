@@ -1,0 +1,10 @@
+ id,value,display_name,statusCode,scenario
+11111,Successful responses: OK,prod-env,200,Successful responses: OK
+11112,Client error responses: Bad Request,prod-env,400,Client error responses: Bad Request
+11113,Client error responses: Unauthorized,prod-env,401,Client error responses: Unauthorized
+11114,Client error responses: Payment Required,prod-env,402,Client error responses: Payment Required
+11115,Client error responses: Forbidden,prod-env,403,Client error responses: Forbidden
+11116,Client error responses: Not Found,prod-env,404,Client error responses: Not Found
+11117,Client error responses: Unprocessable Entity,prod-env,422,Client error responses: Unprocessable Entity
+11118,Client error responses: Too Many Requests,prod-env,429,Client error responses: Too Many Requests
+11119,Server error responses: Internal Server Error,prod-env,500,Server error responses: Internal Server Error

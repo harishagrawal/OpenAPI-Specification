@@ -1,0 +1,5 @@
+ validate_only,cluster-1,my-new-link-1,0,1,topic-sb,500,Internal Server Error
+validate_only,cluster-1,my-new-link-1,0,1,topic-sb,429,Client error responses: Too Many Requests
+validate_only,cluster-1,my-new-link-1,0,1,topic-sb,401,Client error responses: Unauthorized
+validate_only,cluster-1,my-new-link-1,0,1,topic-sb,400,Client error responses: Bad Request
+validate_only,cluster-1,my-new-link-1,0,1,topic-sb,200,Successful responses: OK

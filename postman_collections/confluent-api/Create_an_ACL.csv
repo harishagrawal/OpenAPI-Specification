@@ -1,0 +1,97 @@
+ cluster_id,resource_type,resource_name,pattern_type,principal,host,operation,permission,statusCode,scenario
+lkc-xxxxx,CLUSTER,Kafka,ALLOW,User:u-12345,*,*,CONNECT,201,Successful responses: Created
+lkc-xxxxx,CLUSTER,Kafka,ALLOW,User:u-12345,*,*,DESCRIBE,201,Successful responses: Created
+lkc-xxxxx,CLUSTER,Kafka,ALLOW,User:u-12345,*,*,ALTER,201,Successful responses: Created
+lkc-xxxxx,CLUSTER,Kafka,ALLOW,User:u-12345,*,*,DESCRIBE_CONFIGS,201,Successful responses: Created
+lkc-xxxxx,CLUSTER,Kafka,ALLOW,User:u-12345,*,*,ALTER_CONFIGS,201,Successful responses: Created
+lkc-xxxxx,CLUSTER,Kafka,ALLOW,User:u-12345,*,*,DELETE,201,Successful responses: Created
+lkc-xxxxx,CLUSTER,Kafka,ALLOW,User:u-12345,*,*,CREATE,201,Successful responses: Created
+lkc-xxxxx,CLUSTER,Kafka,ALLOW,User:u-12345,*,*,IDEMPOTENT_WRITE,201,Successful responses: Created
+lkc-xxxxx,CLUSTER,Kafka,ALLOW,User:u-12345,*,*,LIST,201,Successful responses: Created
+lkc-xxxxx,CLUSTER,Kafka,ALLOW,User:u-12345,*,*,PURGE,201,Successful responses: Created
+lkc-xxxxx,CLUSTER,Kafka,ALLOW,User:u-12345,*,*,DESCRIBE_TOPICS,201,Successful responses: Created
+lkc-xxxxx,CLUSTER,Kafka,ALLOW,User:u-12345,*,*,PRODUCE,201,Successful responses: Created
+lkc-xxxxx,CLUSTER,Kafka,ALLOW,User:u-12345,*,*,CONSUME,201,Successful responses: Created
+lkc-xxxxx,CLUSTER,Kafka,ALLOW,User:u-12345,*,*,ADMINISTER_CLUSTER,201,Successful responses: Created
+lkc-xxxxx,CLUSTER,Kafka,ALLOW,User:u-12345,*,*,MANAGE_QUOTA,201,Successful responses: Created
+lkc-xxxxx,CLUSTER,Kafka,ALLOW,User:u-12345,*,*,MANAGE_ACLS,201,Successful responses: Created
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,CONNECT,403,Client error responses: Forbidden
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DESCRIBE,403,Client error responses: Forbidden
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,ALTER,403,Client error responses: Forbidden
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DESCRIBE_CONFIGS,403,Client error responses: Forbidden
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,ALTER_CONFIGS,403,Client error responses: Forbidden
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DELETE,403,Client error responses: Forbidden
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,CREATE,403,Client error responses: Forbidden
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,IDEMPOTENT_WRITE,403,Client error responses: Forbidden
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,LIST,403,Client error responses: Forbidden
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,PURGE,403,Client error responses: Forbidden
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DESCRIBE_TOPICS,403,Client error responses: Forbidden
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,PRODUCE,403,Client error responses: Forbidden
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,CONSUME,403,Client error responses: Forbidden
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,ADMINISTER_CLUSTER,403,Client error responses: Forbidden
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,MANAGE_QUOTA,403,Client error responses: Forbidden
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,MANAGE_ACLS,403,Client error responses: Forbidden
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,CONNECT,401,Client error responses: Unauthorized
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DESCRIBE,401,Client error responses: Unauthorized
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,ALTER,401,Client error responses: Unauthorized
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DESCRIBE_CONFIGS,401,Client error responses: Unauthorized
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,ALTER_CONFIGS,401,Client error responses: Unauthorized
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DELETE,401,Client error responses: Unauthorized
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,CREATE,401,Client error responses: Unauthorized
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,IDEMPOTENT_WRITE,401,Client error responses: Unauthorized
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,LIST,401,Client error responses: Unauthorized
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,PURGE,401,Client error responses: Unauthorized
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DESCRIBE_TOPICS,401,Client error responses: Unauthorized
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,PRODUCE,401,Client error responses: Unauthorized
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,CONSUME,401,Client error responses: Unauthorized
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,ADMINISTER_CLUSTER,401,Client error responses: Unauthorized
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,MANAGE_QUOTA,401,Client error responses: Unauthorized
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,MANAGE_ACLS,401,Client error responses: Unauthorized
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,CONNECT,400,Client error responses: Bad Request
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DESCRIBE,400,Client error responses: Bad Request
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,ALTER,400,Client error responses: Bad Request
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DESCRIBE_CONFIGS,400,Client error responses: Bad Request
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,ALTER_CONFIGS,400,Client error responses: Bad Request
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DELETE,400,Client error responses: Bad Request
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,CREATE,400,Client error responses: Bad Request
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,IDEMPOTENT_WRITE,400,Client error responses: Bad Request
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,LIST,400,Client error responses: Bad Request
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,PURGE,400,Client error responses: Bad Request
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DESCRIBE_TOPICS,400,Client error responses: Bad Request
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,PRODUCE,400,Client error responses: Bad Request
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,CONSUME,400,Client error responses: Bad Request
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,ADMINISTER_CLUSTER,400,Client error responses: Bad Request
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,MANAGE_QUOTA,400,Client error responses: Bad Request
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,MANAGE_ACLS,400,Client error responses: Bad Request
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,CONNECT,429,Client error responses: Too Many Requests
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DESCRIBE,429,Client error responses: Too Many Requests
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,ALTER,429,Client error responses: Too Many Requests
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DESCRIBE_CONFIGS,429,Client error responses: Too Many Requests
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,ALTER_CONFIGS,429,Client error responses: Too Many Requests
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DELETE,429,Client error responses: Too Many Requests
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,CREATE,429,Client error responses: Too Many Requests
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,IDEMPOTENT_WRITE,429,Client error responses: Too Many Requests
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,LIST,429,Client error responses: Too Many Requests
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,PURGE,429,Client error responses: Too Many Requests
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DESCRIBE_TOPICS,429,Client error responses: Too Many Requests
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,PRODUCE,429,Client error responses: Too Many Requests
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,CONSUME,429,Client error responses: Too Many Requests
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,ADMINISTER_CLUSTER,429,Client error responses: Too Many Requests
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,MANAGE_QUOTA,429,Client error responses: Too Many Requests
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,MANAGE_ACLS,429,Client error responses: Too Many Requests
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,CONNECT,500,Server error responses: Internal Server Error
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DESCRIBE,500,Server error responses: Internal Server Error
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,ALTER,500,Server error responses: Internal Server Error
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DESCRIBE_CONFIGS,500,Server error responses: Internal Server Error
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,ALTER_CONFIGS,500,Server error responses: Internal Server Error
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DELETE,500,Server error responses: Internal Server Error
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,CREATE,500,Server error responses: Internal Server Error
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,IDEMPOTENT_WRITE,500,Server error responses: Internal Server Error
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,LIST,500,Server error responses: Internal Server Error
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,PURGE,500,Server error responses: Internal Server Error
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,DESCRIBE_TOPICS,500,Server error responses: Internal Server Error
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,PRODUCE,500,Server error responses: Internal Server Error
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,CONSUME,500,Server error responses: Internal Server Error
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,ADMINISTER_CLUSTER,500,Server error responses: Internal Server Error
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,MANAGE_QUOTA,500,Server error responses: Internal Server Error
+lkc-xxxxx,CLUSTER,Kafka,DENY,User:u-12345,*,*,MANAGE_ACLS,500,Server error responses: Internal Server Error

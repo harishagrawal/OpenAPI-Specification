@@ -1,0 +1,8 @@
+ provider_id,id,statusCode,scenario
+p-1111aaaa-11aa-11aa-11aa-111111aaaaaa,c-1111aaaa-11aa-11aa-11aa-111111aaaaaa,204,Successful responses: No Content
+p-1111aaaa-11aa-11aa-11aa-111111aaaaaa,c-1111aaaa-11aa-11aa-11aa-111111aaaaaa,400,Client error responses: Bad Request
+p-1111aaaa-11aa-11aa-11aa-111111aaaaaa,c-1111aaaa-11aa-11aa-11aa-111111aaaaaa,401,Client error responses: Unauthorized
+p-1111aaaa-11aa-11aa-11aa-111111aaaaaa,c-1111aaaa-11aa-11aa-11aa-111111aaaaaa,403,Client error responses: Forbidden
+p-1111aaaa-11aa-11aa-11aa-111111aaaaaa,c-1111aaaa-11aa-11aa-11aa-111111aaaaaa,404,Client error responses: Not Found
+p-1111aaaa-11aa-11aa-11aa-111111aaaaaa,c-1111aaaa-11aa-11aa-11aa-111111aaaaaa,429,Client error responses: Too Many Requests
+p-1111aaaa-11aa-11aa-11aa-111111aaaaaa,c-1111aaaa-11aa-11aa-11aa-111111aaaaaa,500,Server error responses: Internal Server Error

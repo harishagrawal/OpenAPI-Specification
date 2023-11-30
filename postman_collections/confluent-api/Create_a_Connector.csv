@@ -1,0 +1,16 @@
+ environment_id,kafka_cluster_id,name,connector.class,kafka.api.key,kafka.api.secret,confluent.connector.type,confluent.custom.plugin.id,confluent.custom.connection.endpoints,confluent.custom.schema.registry.auto,statusCode,scenario
+env-xxxxx,lkc-xxxxx,MyGcsLogsBucketConnector,GcsSink,****************,****************,sink,,[
+  "https://storage.googleapis.com/gcs-staging-us-west-2/staging/custom-plugin/2f37f0b6-f8da-4e8b-bc5f-282ebb0511be/connect-e53bb2e8-8de3-49fa-9fb1-4e3fd9a16b66/plugin.zip"
+],,201,Successful responses: Created
+env-xxxxx,lkc-xxxxx,MyGcsLogsBucketConnector,GcsSink,****************,****************,sink,,[
+  "https://storage.googleapis.com/gcs-staging-us-west-2/staging/custom-plugin/2f37f0b6-f8da-4e8b-bc5f-282ebb0511be/connect-e53bb2e8-8de3-49fa-9fb1-4e3fd9a16b66/plugin.zip"
+],,400,Client error responses: Bad Request
+env-xxxxx,lkc-xxxxx,MyGcsLogsBucketConnector,GcsSink,****************,****************,sink,,[
+  "https://storage.googleapis.com/gcs-staging-us-west-2/staging/custom-plugin/2f37f0b6-f8da-4e8b-bc5f-282ebb0511be/connect-e53bb2e8-8de3-49fa-9fb1-4e3fd9a16b66/plugin.zip"
+],,401,Client error responses: Unauthorized
+env-xxxxx,lkc-xxxxx,MyGcsLogsBucketConnector,GcsSink,****************,****************,sink,,[
+  "https://storage.googleapis.com/gcs-staging-us-west-2/staging/custom-plugin/2f37f0b6-f8da-4e8b-bc5f-282ebb0511be/connect-e53bb2e8-8de3-49fa-9fb1-4e3fd9a16b66/plugin.zip"
+],,429,Client error responses: Too Many Requests
+env-xxxxx,lkc-xxxxx,MyGcsLogsBucketConnector,GcsSink,****************,****************,sink,,[
+  "https://storage.googleapis.com/gcs-staging-us-west-2/staging/custom-plugin/2f37f0b6-f8da-4e8b-bc5f-282ebb0511be/connect-e53bb2e8-8de3-49fa-9fb1-4e3fd9a16b66/plugin.zip"
+],,500,Server error responses: Internal Server Error
