@@ -1,0 +1,25 @@
+import csv
+import random
+import faker
+
+# Initialize Faker Library
+fake = faker.Faker()
+
+# Define the headers
+headers = ['id', 'tradeName', 'phone', 'email']
+
+# Open or create the CSV file
+with open('dummy_data.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+
+    # Write the headers
+    writer.writerow(headers)
+
+    # Generate and write the dummy data
+    for _ in range(10):  # Generate 10 rows of dummy data
+        id = random.randint(1, 1000)  # Generate a random ID between 1 and 1000
+        tradeName = fake.company()  # Generate a random company name
+        phone = fake.phone_number()  # Generate a random phone number
+        email = fake.email()  # Generate a random email
+
+        writer.writerow([id, tradeName, phone, email])

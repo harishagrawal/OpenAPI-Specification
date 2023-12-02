@@ -1,0 +1,31 @@
+import csv
+import random
+import faker
+
+# Creating a Faker instance
+fake = faker.Faker()
+
+# Field names
+fields = ['id', 'credential-url', 'size', 'offset']
+
+# Opening the csv file in 'w+' mode
+file = open('dummy_data.csv', 'w+', newline ='')
+
+# Creating a csv writer object
+csvwriter = csv.writer(file)
+
+# Writing the fields
+csvwriter.writerow(fields)
+
+# Generating 100 rows of dummy data
+for i in range(100):
+    # Randomly generating values for each field
+    id = random.choice([fake.pyint(), fake.name()])
+    credential_url = random.choice([fake.uri(), fake.pyfloat()])
+    size = random.choice([fake.pyint(), fake.name()])
+    offset = random.choice([fake.pyint(), fake.name()])
+    
+    # Writing the data
+    csvwriter.writerow([id, credential_url, size, offset])
+
+file.close()

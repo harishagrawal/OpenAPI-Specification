@@ -1,0 +1,25 @@
+import csv
+import random
+import faker
+
+# Creating a Faker instance
+fake = faker.Faker()
+
+# Field names
+fields = ['id', 'tradeName', 'phone', 'email']
+
+# Generating random data
+rows = []
+for _ in range(10):  # Generating 10 rows
+    row = []
+    row.append(str(random.randint(1000, 9999)) if random.random() < 0.5 else fake.uuid4())
+    row.append(fake.company() if random.random() < 0.5 else str(random.randint(1000, 9999)))
+    row.append(fake.phone_number() if random.random() < 0.5 else str(random.randint(10000000, 99999999)))
+    row.append(fake.email() if random.random() < 0.5 else str(random.randint(1000, 9999)))
+    rows.append(row)
+
+# Writing data to CSV
+with open('dummy_data.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(fields)
+    writer.writerows(rows)

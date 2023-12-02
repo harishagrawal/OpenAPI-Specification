@@ -1,0 +1,22 @@
+import csv
+import random
+from faker import Faker
+import datetime
+
+fake = Faker()
+
+header = ['id','startDate','endDate','credentialUrl']
+data = []
+
+for _ in range(10):
+    id = random.choice([fake.random_number(), fake.word()])
+    start_date = fake.date_between(start_date='-30d', end_date='today')
+    end_date = fake.date_between(start_date='today', end_date='+30d')
+    credential_url = random.choice([fake.url(), fake.random_number()])
+    
+    data.append([id, start_date, end_date, credential_url])
+
+with open('dummy_data.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(header)
+    writer.writerows(data)

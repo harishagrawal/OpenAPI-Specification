@@ -1,0 +1,35 @@
+import csv
+import random
+import time
+import string
+
+# Variables to generate dummy values for
+variables = ['id', 'token', 'createdAt']
+
+# Create a CSV file
+with open('dummy_data.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+
+    # Write the header
+    writer.writerow(variables)
+
+    # Generate rows of dummy values
+    for i in range(100):  # Generate 100 rows
+        row = []
+
+        for var in variables:
+            if var == 'id':
+                row.append(str(i))  # Use the row number as the ID
+            elif var == 'token':
+                if i % 15 == 0:  # Skip every 15th row
+                    row.append('')
+                else:
+                    row.append(''.join(random.choices(string.ascii_uppercase + string.digits, k=10)))  # Generate a random token
+            elif var == 'createdAt':
+                if i % 10 == 0:  # Use a number for every 10th row
+                    row.append(i)
+                else:
+                    row.append(time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(random.randint(1262304000, 1609459200))))  # Generate a random date between 2010 and 2021
+
+        # Write the row to the CSV file
+        writer.writerow(row)

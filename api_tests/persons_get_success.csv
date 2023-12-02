@@ -1,0 +1,31 @@
+import csv
+import random
+import faker
+from datetime import datetime, timedelta
+
+# Initialize Faker library
+fake = faker.Faker()
+
+# Define the number of rows to generate
+size = 100
+
+# Define the offset for ID
+offset = 1000
+
+# Define the column names
+fields = ['ID', 'Name', 'BirthDate', 'Email']
+
+# Open or create the CSV file
+with open('dummy_data.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+
+    # Write the column names
+    writer.writerow(fields)
+
+    # Generate and write the rows of dummy data
+    for i in range(size):
+        id = i + offset
+        name = fake.name().replace(",", "")  # Ensure no commas in name
+        birth_date = (datetime.now() - timedelta(days=random.randint(18*365, 90*365))).date()
+        email = fake.email()
+        writer.writerow([id, name, birth_date, email])

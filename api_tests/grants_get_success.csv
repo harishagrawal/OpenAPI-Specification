@@ -1,0 +1,34 @@
+import random
+import string
+import csv
+from faker import Faker
+from datetime import datetime, timedelta
+
+# Initialize faker
+fake = Faker()
+
+# Define the number of rows to generate
+num_rows = 10
+
+# Define the column headers
+headers = ['id', 'token', 'createdAt', 'updatedAt', 'email', 'name', 'image']
+
+# Open a CSV file in write mode
+with open('dummy_data.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+
+    # Write the headers
+    writer.writerow(headers)
+
+    # Generate and write the rows
+    for _ in range(num_rows):
+        id = random.randint(1, 1000)
+        token = ''.join(random.choices(string.ascii_letters + string.digits, k=32))
+        createdAt = fake.date_between(start_date='-1y', end_date='today')
+        updatedAt = createdAt + timedelta(days=random.randint(1, 365))
+        email = fake.email()
+        name = fake.name()
+        image = fake.image_url()
+
+        row = [id, token, createdAt, updatedAt, email, name, image]
+        writer.writerow(row)

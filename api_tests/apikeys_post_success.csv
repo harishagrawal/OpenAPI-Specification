@@ -1,0 +1,29 @@
+import csv
+import random
+import string
+
+# Define the list of headers
+headers = ['id', 'token']
+
+# Define a function to generate a random string of a given length
+def random_string(length):
+    letters = string.ascii_letters
+    return ''.join(random.choice(letters) for i in range(length))
+
+# Open the CSV file in write mode
+with open('dummy.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+
+    # Write the headers
+    writer.writerow(headers)
+
+    # Generate 100 rows of dummy data
+    for i in range(100):
+        # Generate a random id (integer between 1 and 1000)
+        id = random.randint(1, 1000)
+
+        # Generate a random token (string of length 10)
+        token = random_string(10)
+
+        # Write the row
+        writer.writerow([id, token])

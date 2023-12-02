@@ -1,0 +1,38 @@
+import csv
+import random
+import faker
+
+# Create a Faker instance
+fake = faker.Faker()
+
+# Define a function to generate a random value for a given variable
+def generate_value(variable):
+    if variable == 'cocNumber':
+        return random.randint(100000, 999999)
+    elif variable == 'cocBranchNumber':
+        return random.randint(1, 999)
+    elif variable == 'city':
+        return fake.city()
+    elif variable == 'tradeName':
+        return fake.company()
+    elif variable == 'phone':
+        return fake.phone_number()
+    elif variable == 'email':
+        return fake.email()
+    else:
+        return ''
+
+# Define the variables
+variables = ['cocNumber', 'cocBranchNumber', 'city', 'tradeName', 'phone', 'email']
+
+# Open the CSV file
+with open('dummy_data.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+
+    # Write the headers
+    writer.writerow(variables)
+
+    # Generate and write the data
+    for i in range(100): # Generate 100 rows of data
+        row = [generate_value(variable) if random.random() > 0.1 else '' for variable in variables]
+        writer.writerow(row)

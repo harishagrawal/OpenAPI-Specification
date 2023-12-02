@@ -1,0 +1,31 @@
+import csv
+import random
+import faker
+
+# Create a Faker instance
+fake = faker.Faker()
+
+# Define the CSV file name
+file_name = "dummy_data.csv"
+
+# Define the field names
+fields = ['client', 'email', 'otp']
+
+# Generate random data
+rows = []
+for _ in range(10):
+    row = {}
+    row['client'] = fake.name() if random.choice([True, False]) else random.randint(1, 100)
+    row['email'] = fake.email() if random.choice([True, False]) else random.randint(1, 100)
+    row['otp'] = fake.random_number(digits=6, fix_len=True)
+    rows.append(row)
+
+# Write the data to the CSV file
+with open(file_name, 'w') as f:
+    writer = csv.DictWriter(f, fieldnames=fields)
+    writer.writeheader()
+    writer.writerows(rows)
+
+# Print the generated data
+for row in rows:
+    print(row)

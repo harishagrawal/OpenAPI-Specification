@@ -1,0 +1,29 @@
+import random
+import csv
+from faker import Faker
+
+fake = Faker()
+
+# Define the names of the columns
+columns = ['cocNumber', 'cocBranchNumber', 'city', 'tradeName', 'phone', 'email']
+
+# Create a list to store the rows of data
+rows = []
+
+# Generate the rows of data
+for _ in range(10):  # Generating 10 rows of data
+    cocNumber = random.randint(10000, 99999)
+    cocBranchNumber = random.randint(1, 9)
+    city = fake.city()
+    tradeName = fake.company()
+    phone = fake.phone_number()
+    email = fake.email()
+
+    # Append the row to the list
+    rows.append([cocNumber, cocBranchNumber, city, tradeName, phone, email])
+
+# Write the data to a CSV file
+with open('dummy_data.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(columns)
+    writer.writerows(rows)
