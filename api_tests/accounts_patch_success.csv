@@ -1,0 +1,21 @@
+import csv
+import faker
+
+# Initialize faker generator
+fake = faker.Faker()
+
+# Define fieldnames (column headers)
+fieldnames = ['email']
+
+# Open or create CSV file
+with open('dummy_data.csv', 'w', newline='') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    # Write column headers
+    writer.writeheader()
+
+    # Generate and write rows of dummy data
+    for _ in range(10):
+        writer.writerow({
+            'email': fake.email(),
+        })

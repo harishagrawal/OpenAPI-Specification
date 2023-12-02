@@ -1,0 +1,25 @@
+import csv
+import random
+from faker import Faker
+fake = Faker()
+
+header = ['cocNumber', 'cocBranchNumber', 'city', 'tradeName', 'phone', 'email']
+data = []
+
+for _ in range(10):  # generating 10 rows of dummy data
+    cocNumber = random.randint(10000, 99999)  # 5 digit random number
+    cocBranchNumber = random.randint(1, 999)  # 3 digit random number
+    city = fake.city()
+    tradeName = fake.company()
+    phone = fake.phone_number()
+    email = fake.email()
+    data.append([cocNumber, cocBranchNumber, city, tradeName, phone, email])
+
+filename = "dummy_data.csv"
+
+with open(filename, 'w', newline='') as csvfile:
+    csvwriter = csv.writer(csvfile)
+    csvwriter.writerow(header)
+    csvwriter.writerows(data)
+
+print(f"{filename} with dummy data created.")

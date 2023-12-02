@@ -1,0 +1,28 @@
+import csv
+import random
+import faker
+
+# Create a Faker instance
+fake = faker.Faker()
+
+# Define a list of column headers
+headers = ['name', 'image', 'settings']
+
+# Define a list to store our rows of data
+data = []
+
+# Generate 10 rows of data
+for _ in range(10):
+    row = {
+        'name': fake.name() if random.choice([True, False]) else random.randint(1, 1000),
+        'image': fake.image_url() if random.choice([True, False]) else random.randint(1, 1000),
+        'settings': fake.text(max_nb_chars=20).replace(',', '') if random.choice([True, False]) else random.randint(1, 1000),
+    }
+    data.append(row)
+
+# Write the data to a CSV file
+with open('sample_data.csv', 'w', newline='') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=headers)
+    writer.writeheader()
+    for row in data:
+        writer.writerow(row)

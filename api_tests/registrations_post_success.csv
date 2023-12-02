@@ -1,0 +1,28 @@
+import random
+import csv
+from faker import Faker
+from datetime import datetime, timedelta
+
+# Instantiate Faker
+fake = Faker()
+
+# Function to generate random dates
+def random_dates(start, end):
+    return start + timedelta(
+        seconds=random.randint(0, int((end - start).total_seconds())))
+
+start_date = datetime(2021,1,1)
+end_date = datetime(2022,12,31)
+
+# Define CSV file
+with open('dummy_data.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(["id", "reference", "startDate", "endDate", "credentialUrl"])
+
+    # Generate 100 rows of dummy data
+    for _ in range(100):
+        writer.writerow([random.randint(1000, 9999), 
+                         fake.bothify(text='Ref-????-####'), 
+                         random_dates(start_date, end_date).strftime('%m-%d-%Y'), 
+                         random_dates(start_date, end_date).strftime('%m-%d-%Y'), 
+                         fake.url()])

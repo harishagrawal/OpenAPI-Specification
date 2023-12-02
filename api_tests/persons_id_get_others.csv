@@ -1,0 +1,32 @@
+import csv
+import random
+import faker
+
+# Initialize Faker library
+fake = faker.Faker()
+
+# Define the column headers
+headers = ['id', 'name', 'email', 'date_of_birth', 'phone_number', 'address']
+
+# Open a CSV file in write mode
+with open('dummy_data.csv', 'w', newline='') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=headers)
+
+    # Write the headers
+    writer.writeheader()
+
+    # Generate 100 rows of fake data
+    for i in range(100):
+        # Create a dictionary to hold the data for a row
+        row = {}
+
+        # Generate random data for each field
+        row['id'] = str(i) if random.choice([True, False]) else i
+        row['name'] = fake.name()
+        row['email'] = fake.email() if random.choice([True, False]) else random.randint(1000,9999)
+        row['date_of_birth'] = fake.date_of_birth(minimum_age=22, maximum_age=90).isoformat()
+        row['phone_number'] = fake.phone_number().replace(',', '') if random.choice([True, False]) else random.randint(1000000000,9999999999)
+        row['address'] = fake.address().replace(',', '').replace('\n', ' ') if random.choice([True, False]) else ''
+
+        # Write the row to the CSV file
+        writer.writerow(row)

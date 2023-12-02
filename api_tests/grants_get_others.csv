@@ -1,0 +1,26 @@
+import csv
+import random
+from faker import Faker
+
+fake = Faker()
+
+# Define variables
+variables = ["email", "name"]
+
+# Generate CSV file
+with open('dummy_data.csv', 'w', newline='') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=variables)
+
+    writer.writeheader()
+    for _ in range(10):
+        # Randomly select a variable to have an inappropriate data type
+        inappropriate_var = random.choice(variables)
+        
+        row = {}
+        for var in variables:
+            if var == "email":
+                row[var] = fake.email() if var != inappropriate_var else random.randint(1000, 9999)
+            elif var == "name":
+                row[var] = fake.name() if var != inappropriate_var else str(random.randint(1000, 9999))
+                
+        writer.writerow(row)

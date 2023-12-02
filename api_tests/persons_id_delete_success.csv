@@ -1,0 +1,30 @@
+import csv
+import random
+import faker
+
+# Initialize Faker Library
+fake = faker.Faker()
+
+def generate_dummy_data(num_records):
+    # Specify the names of the columns
+    fieldnames = ['id', 'name', 'email', 'birthdate', 'phone_number']
+
+    # Create a new CSV file
+    with open('dummy_data.csv', 'w', newline='') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+        # Write the headers
+        writer.writeheader()
+
+        # Generate and write the dummy data
+        for _ in range(num_records):
+            writer.writerow({
+                'id': random.randint(1, 10000),
+                'name': fake.name(),
+                'email': fake.email(),
+                'birthdate': fake.date_of_birth(minimum_age=18, maximum_age=90).isoformat(),
+                'phone_number': fake.phone_number(),
+            })
+
+# Generate 100 records
+generate_dummy_data(100)

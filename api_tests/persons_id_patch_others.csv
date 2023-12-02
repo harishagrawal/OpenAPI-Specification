@@ -1,0 +1,49 @@
+import csv
+import random
+import faker
+from random import randint, choice
+
+# Initialize faker generator
+fake = faker.Faker()
+
+# Variables
+variables = ['id', 'initials', 'firstName', 'middleName', 'lastName', 'birthDate', 'birthPlace', 'phone', 'email', 'postalCode', 'houseNumber', 'houseNumberPostfix', 'countryCode', 'reference']
+
+# Open the CSV file in write mode
+with open('dummy_data.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    
+    # Write header
+    writer.writerow(variables)
+
+    # Generate dummy data for each variable
+    for _ in range(100):  # Generate 100 rows of data
+        data = []
+        for variable in variables:
+            if variable == 'id':
+                data.append(randint(1, 1000)) if random.random() > 0.1 else data.append(fake.word())
+            elif variable in ['initials', 'firstName', 'middleName', 'lastName']:
+                data.append(fake.name()) if random.random() > 0.1 else data.append(randint(1, 1000))
+            elif variable == 'birthDate':
+                data.append(fake.date_of_birth(minimum_age=18, maximum_age=90).isoformat()) if random.random() > 0.1 else data.append(fake.word())
+            elif variable == 'birthPlace':
+                data.append(fake.city()) if random.random() > 0.1 else data.append(randint(1, 1000))
+            elif variable == 'phone':
+                data.append(fake.phone_number()) if random.random() > 0.1 else data.append(fake.word())
+            elif variable == 'email':
+                data.append(fake.email()) if random.random() > 0.1 else data.append(randint(1, 1000))
+            elif variable == 'postalCode':
+                data.append(fake.zipcode()) if random.random() > 0.1 else data.append(fake.word())
+            elif variable == 'houseNumber':
+                data.append(randint(1, 1000)) if random.random() > 0.1 else data.append(fake.word())
+            elif variable == 'houseNumberPostfix':
+                data.append(choice(['A', 'B', 'C', 'D', 'E', 'F'])) if random.random() > 0.1 else data.append(randint(1, 1000))
+            elif variable == 'countryCode':
+                data.append(fake.country_code()) if random.random() > 0.1 else data.append(fake.word())
+            elif variable == 'reference':
+                data.append(fake.uuid4()) if random.random() > 0.1 else data.append(randint(1, 1000))
+            else:
+                data.append('')  # Add empty value for unknown variables
+
+        # Write data row
+        writer.writerow(data)

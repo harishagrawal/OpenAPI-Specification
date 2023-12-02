@@ -1,0 +1,33 @@
+import csv
+import random
+import faker
+
+# Initialize Faker library
+fake = faker.Faker()
+
+# Define column names
+column_names = ["field1", "field2", "field3"]
+
+# Create a list to store our data
+data = []
+
+# Generate 100 rows of fake data
+for _ in range(100):
+    field1 = fake.name()
+    field2 = fake.email()
+    field3 = fake.date()
+    
+    # Append this data as a dictionary to our data list
+    data.append({
+        "field1": field1,
+        "field2": field2,
+        "field3": field3,
+    })
+
+# Write our data to a CSV file
+with open("dummy_data.csv", "w", newline="") as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=column_names)
+    
+    writer.writeheader()
+    for row in data:
+        writer.writerow(row)

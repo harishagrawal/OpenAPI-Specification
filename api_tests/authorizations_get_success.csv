@@ -1,0 +1,24 @@
+import csv
+import random
+import faker
+from faker import Faker
+import datetime
+
+fields = ['id', 'name', 'email', 'createdAt', 'updatedAt']
+
+fake = Faker()
+
+def generate_data():
+    id = random.randint(1, 100)
+    name = fake.name().replace(",", "")
+    email = fake.email()
+    createdAt = fake.date_between(start_date='-1y', end_date='today')
+    updatedAt = fake.date_between(start_date=createdAt, end_date='today')
+    return [id, name, email, createdAt, updatedAt]
+
+with open('dummy_data.csv', mode='w') as file:
+    writer = csv.writer(file)
+    writer.writerow(fields)
+
+    for _ in range(100):
+        writer.writerow(generate_data())

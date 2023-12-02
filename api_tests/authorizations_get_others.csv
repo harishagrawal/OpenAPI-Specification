@@ -1,0 +1,32 @@
+import csv
+import random
+from faker import Faker
+
+fake = Faker()
+
+# Define variables
+variables = ["name", "email"]
+
+# Open CSV file
+with open('dummy_data.csv', 'w', newline='') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=variables)
+
+    # Write header
+    writer.writeheader()
+
+    # Generate 100 rows of dummy data
+    for _ in range(100):
+        # Randomly select data type for each row
+        if random.choice([True, False]):
+            # Generate dummy values
+            row = {var: getattr(fake, var)() for var in variables}
+        else:
+            # Generate inappropriate data types
+            row = {var: fake.random_int(min=1, max=9999) for var in variables}
+
+        # Randomly skip values
+        if random.choice([True, False]):
+            row[random.choice(variables)] = ''
+
+        # Write row to CSV
+        writer.writerow(row)

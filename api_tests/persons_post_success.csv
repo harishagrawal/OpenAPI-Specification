@@ -1,0 +1,35 @@
+import csv
+import random
+import faker
+from faker import Faker
+
+# initialize faker
+fake = Faker()
+
+fields = ['initials', 'firstName', 'middleName', 'lastName', 'birthDate', 'birthPlace', 'phone', 'email', 'postalCode', 'houseNumber', 'houseNumberPostfix', 'countryCode', 'reference']
+
+# generate dummy data
+data = []
+for _ in range(10):  # generating 10 rows of data
+    row = [
+        fake.random_uppercase_letter(),  # initials
+        fake.first_name(),  # firstName
+        fake.first_name(),  # middleName
+        fake.last_name(),  # lastName
+        str(fake.date_of_birth()),  # birthDate
+        fake.city(),  # birthPlace
+        fake.phone_number(),  # phone
+        fake.email(),  # email
+        fake.zipcode(),  # postalCode
+        fake.building_number(),  # houseNumber
+        fake.random_uppercase_letter(),  # houseNumberPostfix
+        fake.country_code(),  # countryCode
+        fake.random_number(digits=5)  # reference
+    ]
+    data.append(row)
+
+# write to CSV file
+with open('dummy_data.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(fields)
+    writer.writerows(data)

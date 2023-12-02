@@ -1,0 +1,32 @@
+import csv
+import random
+import faker
+from datetime import datetime, timedelta
+
+# Initialize Faker library
+fake = faker.Faker()
+
+# Define field names
+fieldnames = ['size', 'offset', 'name', 'birthDate']
+
+# Open or create the CSV file
+with open('dummy_data.csv', 'w', newline='') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    # Write the headers
+    writer.writeheader()
+
+    # Generate and write the data rows
+    for _ in range(100):  # Generate 100 rows
+        size = random.randint(1, 100)  # Random integer between 1 and 100
+        offset = random.randint(1, 100)  # Random integer between 1 and 100
+        name = fake.name()  # Randomly generated name
+        birthDate = fake.date_of_birth(minimum_age=18, maximum_age=90)  # Randomly generated date of birth
+
+        # Write the data row
+        writer.writerow({
+            'size': size,
+            'offset': offset,
+            'name': name,
+            'birthDate': birthDate.strftime('%Y-%m-%d'),  # Format date in 'YYYY-MM-DD' format
+        })

@@ -1,0 +1,34 @@
+import csv
+import random
+import time
+import string
+
+# Variables to generate dummy values for
+variables = ['id', 'token', 'createdAt']
+
+# Create a CSV file
+with open('dummy_data.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+
+    # Write the header
+    writer.writerow(variables)
+
+    # Generate rows of dummy values
+    for _ in range(10):
+        row = []
+
+        # Generate a dummy value for each variable
+        for variable in variables:
+            if variable == 'id':
+                # Generate a random integer for 'id'
+                row.append(random.randint(1, 100))
+            elif variable == 'token':
+                # Generate a random string for 'token'
+                letters = string.ascii_lowercase
+                row.append(''.join(random.choice(letters) for _ in range(10)))
+            elif variable == 'createdAt':
+                # Generate a random timestamp for 'createdAt'
+                row.append(time.ctime(random.randint(1240000000, 1540000000)))
+
+        # Write the row of dummy values
+        writer.writerow(row)

@@ -1,0 +1,41 @@
+import csv
+import random
+import faker
+from datetime import datetime, timedelta
+
+
+def generate_random_data(records):
+    fake = faker.Faker()
+    data = []
+
+    for _ in range(records):
+        id = random.randint(1000, 9999)
+        initials = "".join(fake.random_letters(length=3)).upper()
+        firstName = fake.first_name()
+        middleName = fake.last_name()
+        lastName = fake.last_name()
+        birthDate = (datetime.now() - timedelta(days=random.randint(7000, 25000))).strftime('%Y-%m-%d')
+        birthPlace = fake.city()
+        phone = fake.phone_number().split("x")[0]
+        email = fake.email()
+        postalCode = fake.zipcode()
+        houseNumber = fake.building_number()
+        houseNumberPostfix = fake.random_letter().upper()
+        countryCode = fake.country_code()
+        reference = fake.random_number(digits=8, fix_len=True)
+
+        data.append([id, initials, firstName, middleName, lastName, birthDate, birthPlace, phone, email, postalCode, houseNumber, houseNumberPostfix, countryCode, reference])
+
+    return data
+
+
+def write_csv_file(records, filename):
+    data = generate_random_data(records)
+    headers = ['id', 'initials', 'firstName', 'middleName', 'lastName', 'birthDate', 'birthPlace', 'phone', 'email', 'postalCode', 'houseNumber', 'houseNumberPostfix', 'countryCode', 'reference']
+
+    with open(filename, 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(headers)
+        writer.writerows(data)
+
+write_csv_file(100, 'dummy_data.csv')
