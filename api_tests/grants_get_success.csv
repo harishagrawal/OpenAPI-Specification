@@ -1,0 +1,9 @@
+import pandas as pd
+
+# Load the data
+csv_filename = '/mnt/data/dummy_profiles.csv'
+data = pd.read_csv(csv_filename)
+
+# Work with the dataframe `data`
+print(data.head())
+
