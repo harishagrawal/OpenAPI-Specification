@@ -1,0 +1,26 @@
+import csv
+import random
+import faker
+
+# Creating a Faker instance
+fake = faker.Faker()
+
+# Field names
+fields = ['id', 'credential-url', 'size', 'offset']
+
+# Generating random data
+rows = []
+for _ in range(10):  # Generating 10 rows
+    row = []
+    row.append(str(random.randint(1000, 9999)))  # id
+    row.append(fake.url() if random.random() > 0.2 else random.randint(1000, 9999))  # credential-url
+    row.append(fake.word() if random.random() > 0.7 else random.randint(1000, 9999))  # size
+    row.append('' if random.random() > 0.5 else random.randint(1000, 9999))  # offset
+    rows.append(row)
+
+# Writing to csv
+filename = "dummy_data.csv"
+with open(filename, 'w') as csvfile:
+    csvwriter = csv.writer(csvfile)
+    csvwriter.writerow(fields)
+    csvwriter.writerows(rows)

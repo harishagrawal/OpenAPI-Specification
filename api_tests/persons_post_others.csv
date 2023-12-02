@@ -1,0 +1,38 @@
+import csv
+import random
+import faker
+import string
+from datetime import datetime, timedelta
+
+# Initialize Faker library
+fake = faker.Faker()
+
+# Define the column headers
+headers = ['initials', 'lastName', 'birthDate']
+
+# Define a function to generate random initials
+def generate_initials():
+    return ''.join(random.choices(string.ascii_uppercase, k=2))
+
+# Define a function to generate random last name
+def generate_last_name():
+    return fake.last_name()
+
+# Define a function to generate random birth date
+def generate_birth_date():
+    return (datetime.now() - timedelta(days=random.randint(1, 100*365))).strftime('%m-%d-%Y')
+
+# Define a function to generate a row of data
+def generate_row():
+    return [generate_initials(), generate_last_name(), generate_birth_date()]
+
+# Open the CSV file
+with open('dummy_data.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+
+    # Write the headers
+    writer.writerow(headers)
+
+    # Generate and write 100 rows of data
+    for _ in range(100):
+        writer.writerow(generate_row())

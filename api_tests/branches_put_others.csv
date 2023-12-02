@@ -1,0 +1,36 @@
+import csv
+import random
+import faker
+
+# Create a Faker instance
+fake = faker.Faker()
+
+# Define a function to generate a random value for a given variable
+def generate_value(variable):
+    if variable == 'cocNumber':
+        return random.randint(100000, 999999)
+    elif variable == 'cocBranchNumber':
+        return random.randint(1, 999)
+    elif variable == 'city':
+        return fake.city()
+    elif variable == 'tradeName':
+        return fake.company()
+    elif variable == 'phone':
+        return fake.phone_number()
+    elif variable == 'email':
+        return random.randint(100000, 999999) if random.random() < 0.1 else fake.email()
+
+# Define the variables
+variables = ['cocNumber', 'cocBranchNumber', 'city', 'tradeName', 'phone', 'email']
+
+# Generate the CSV data
+data = []
+for _ in range(100):
+    row = {variable: generate_value(variable) if random.random() > 0.1 else '' for variable in variables}
+    data.append(row)
+
+# Write the CSV data to a file
+with open('dummy_data.csv', 'w', newline='') as f:
+    writer = csv.DictWriter(f, fieldnames=variables)
+    writer.writeheader()
+    writer.writerows(data)

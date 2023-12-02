@@ -1,0 +1,56 @@
+import random
+import csv
+import faker
+
+# Creating a Faker instance and seeding to have the same output every time we execute the code
+fake = faker.Faker()
+faker.Faker.seed(4321)
+random.seed(4321)
+
+# List of column names (variables)
+variables = ["id", "tradeName", "phone", "email"]
+
+# Open the CSV file in write mode
+with open('dummy_data.csv', 'w', newline='') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=variables)
+
+    # Write the header
+    writer.writeheader()
+
+    # Generate 100 rows of dummy data
+    for _ in range(100):
+        # Create a dictionary to hold the data for this row
+        row_data = {}
+
+        # Generate dummy data for each variable
+        for variable in variables:
+            if variable == "id":
+                # Use either an integer or a string for the ID
+                if random.choice([True, False]):
+                    row_data[variable] = fake.unique.random_number(digits=5)
+                else:
+                    row_data[variable] = fake.unique.word()
+
+            elif variable == "tradeName":
+                # Always use a string for the trade name, but occasionally leave it blank
+                if random.choice([True, False]):
+                    row_data[variable] = fake.company()
+                else:
+                    row_data[variable] = ""
+
+            elif variable == "phone":
+                # Use either a string or a number for the phone, but occasionally leave it blank
+                if random.choice([True, False, False]):  # Less chance to leave it blank
+                    row_data[variable] = fake.phone_number().replace(",", "")
+                else:
+                    row_data[variable] = ""
+
+            elif variable == "email":
+                # Use either a string (valid email) or a number for the email
+                if random.choice([True, False]):
+                    row_data[variable] = fake.email()
+                else:
+                    row_data[variable] = fake.random_number(digits=5)
+
+        # Write the row data to the CSV file
+        writer.writerow(row_data)

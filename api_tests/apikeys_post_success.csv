@@ -1,0 +1,25 @@
+import random
+import string
+import csv
+from faker import Faker
+from datetime import datetime, timedelta
+
+# Initialize Faker library
+fake = Faker()
+
+# Define variable list
+variables = ['id', 'token', 'createdAt']
+
+# Define function to generate random data
+def generate_data():
+    id = random.randint(1, 1000)
+    token = ''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(10))
+    created_at = fake.date_between(start_date='-1y', end_date='today')
+    return [id, token, created_at]
+
+# Generate CSV file
+with open('dummy_data.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(variables)
+    for _ in range(100):  # Generate 100 rows of data
+        writer.writerow(generate_data())

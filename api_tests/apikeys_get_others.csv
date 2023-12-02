@@ -1,0 +1,28 @@
+import csv
+import random
+import faker
+import string
+
+def generate_random_data():
+    fake = faker.Faker()
+    data = []
+
+    for _ in range(10):
+        apikey = ''.join(random.choices(string.ascii_uppercase + string.digits, k=32))
+        id = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
+        name = fake.name()
+        email = str(random.randint(1000,9999)) if random.choice([True, False]) else fake.email()
+        dob = fake.date_of_birth(minimum_age=10, maximum_age=90)
+        phone = fake.phone_number() if random.choice([True, False]) else random.randint(1000000000,9999999999)
+        data.append([apikey, id, name, email, dob, phone])
+
+    return data
+
+def generate_csv(data, filename):
+    with open(filename, 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(["apikey", "id", "name", "email", "dob", "phone"])
+        writer.writerows(data)
+
+data = generate_random_data()
+generate_csv(data, 'dummy_data.csv')

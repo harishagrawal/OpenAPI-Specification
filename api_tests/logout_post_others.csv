@@ -1,0 +1,43 @@
+import random
+import csv
+import faker
+from datetime import datetime, timedelta
+
+fake = faker.Faker()
+
+# Define the field names for the CSV
+fieldnames = ['description', 'error', 'schema_field', 'value']
+
+# Open the CSV file in write mode
+with open('dummy_data.csv', 'w', newline='') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    # Write the headers
+    writer.writeheader()
+
+    # Generate 100 rows of data
+    for _ in range(100):
+        # Randomly skip some values
+        if random.choice([True, False]):
+            description = ''
+        else:
+            description = fake.sentence()
+
+        if random.choice([True, False]):
+            error = ''
+        else:
+            error = fake.word()
+
+        if random.choice([True, False]):
+            schema_field = ''
+        else:
+            schema_field = fake.word()
+
+        # Use inappropriate data types for some fields
+        if random.choice([True, False]):
+            value = fake.random_number()
+        else:
+            value = fake.word()
+
+        # Write the data to the CSV
+        writer.writerow({'description': description, 'error': error, 'schema_field': schema_field, 'value': value})

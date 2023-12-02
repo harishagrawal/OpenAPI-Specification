@@ -1,0 +1,26 @@
+import csv
+import random
+import faker
+
+fake = faker.Faker()
+
+# Define variable ranges
+cocNumber_range = range(10000, 99999)
+cocBranchNumber_range = range(1, 999)
+size_range = range(1, 100)
+offset_range = range(1, 100)
+
+# Define the CSV file
+with open('dummy_data.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(["cocNumber", "cocBranchNumber", "tradeName", "size", "offset"])  # Write the header
+
+    # Generate dummy data
+    for _ in range(100):  # Generate 100 rows of data
+        cocNumber = random.choice(cocNumber_range)
+        cocBranchNumber = random.choice(cocBranchNumber_range)
+        tradeName = fake.company()
+        size = random.choice(size_range)
+        offset = random.choice(offset_range)
+
+        writer.writerow([cocNumber, cocBranchNumber, tradeName, size, offset])

@@ -1,0 +1,28 @@
+import csv
+import random
+import faker
+
+fake = faker.Faker()
+
+# Define the field names
+fieldnames = ['coc-number', 'coc-branch-number', 'trade-name', 'size', 'offset']
+
+# Create random data
+data = []
+for _ in range(10):
+    row = {
+        'coc-number': str(random.randint(10000,99999)) if random.choice([True, False]) else random.choice(['A', 'B', 'C', 'D', 'E']),
+        'coc-branch-number': str(random.randint(1,9)) if random.choice([True, False]) else fake.name(),
+        'trade-name': fake.company() if random.choice([True, False]) else str(random.randint(100, 999)),
+        'size': str(random.randint(1,99)) if random.choice([True, False]) else fake.word(),
+        'offset': str(random.randint(1000,9999)) if random.choice([True, False]) else ''
+    }
+    data.append(row)
+
+# Write the data to a CSV file
+with open('sample.csv', 'w', newline='') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for row in data:
+        writer.writerow(row)

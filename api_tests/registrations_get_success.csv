@@ -1,0 +1,27 @@
+import csv
+import random
+import faker
+
+# Initialize Faker library
+fake = faker.Faker()
+
+# Define the headers
+headers = ['id', 'credential-url', 'size', 'offset']
+
+# Open the file in write mode
+with open('dummy_data.csv', 'w', newline='') as csvfile:
+    # Create a CSV writer
+    writer = csv.writer(csvfile)
+
+    # Write the headers
+    writer.writerow(headers)
+
+    # Generate and write the data rows
+    for _ in range(100):  # Generate 100 rows
+        row = [
+            fake.random_int(min=1, max=1000),  # id
+            fake.uri(),  # credential-url
+            fake.random_int(min=1, max=1000),  # size
+            fake.random_int(min=0, max=1000),  # offset
+        ]
+        writer.writerow(row)

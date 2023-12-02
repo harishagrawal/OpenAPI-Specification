@@ -1,0 +1,36 @@
+import csv
+import random
+import faker
+
+# Create a Faker instance
+fake = faker.Faker()
+
+# Define a list of column headers
+headers = ['client', 'email', 'otp']
+
+# Define a list to store the rows of data
+data_rows = []
+
+# Generate 10 rows of data
+for _ in range(10):
+    # Generate a random client name
+    client = str(random.randint(1,100)) if random.choice([True, False]) else fake.name()
+
+    # Generate a random email address or numeric value
+    email = str(random.randint(1,10000)) if random.choice([True, False]) else fake.email()
+
+    # Generate a random OTP or leave it blank
+    otp = random.randint(100000,999999) if random.choice([True, False]) else ''
+
+    # Append the row to the list of data rows
+    data_rows.append([client, email, otp])
+
+# Create a CSV file
+with open('dummy_data.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+
+    # Write the headers
+    writer.writerow(headers)
+
+    # Write the data rows
+    writer.writerows(data_rows)

@@ -1,0 +1,37 @@
+import csv
+import random
+import string
+from random import randint
+from datetime import datetime, timedelta
+
+# Define the header
+header = ['id', 'did', 'name', 'image', 'email', 'settings', 'createdAt', 'updatedAt']
+
+# Define a function to generate random strings
+def random_string(length):
+    letters = string.ascii_lowercase
+    return ''.join(random.choice(letters) for i in range(length))
+
+# Define a function to generate random dates
+def random_date(start, end):
+    return start + timedelta(
+        seconds=random.randint(0, int((end - start).total_seconds())))
+
+# Open the file in write mode
+with open('dummy_data.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(header)  # Write the header
+
+    # Generate 100 rows of dummy data
+    for i in range(100):
+        row = [
+            i,  # id
+            random_string(10) if i % 2 == 0 else i,  # did
+            random_string(5),  # name
+            "https://example.com/" + random_string(5) + ".jpg",  # image
+            random_string(5) + "@example.com" if i % 3 != 0 else i,  # email
+            {"setting1": random_string(5), "setting2": random_string(5)},  # settings
+            random_date(datetime(2020, 1, 1), datetime(2022, 1, 1)),  # createdAt
+            random_date(datetime(2020, 1, 1), datetime(2022, 1, 1))  # updatedAt
+        ]
+        writer.writerow(row)

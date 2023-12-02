@@ -1,0 +1,65 @@
+import csv
+import random
+import faker
+
+# Initialize Faker library
+fake = faker.Faker()
+
+# Define the column headers
+headers = ['email', 'id', 'name', 'date_of_birth', 'phone_number']
+
+# Open the CSV file in write mode
+with open('dummy_data.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+
+    # Write the headers to the CSV file
+    writer.writerow(headers)
+
+    # Generate 100 rows of dummy data
+    for _ in range(100):
+        # Randomly select the data types for each field
+        data_types = random.choices(['string', 'number', 'date'], k=5)
+
+        # Initialize the row data
+        row = []
+
+        # Generate the data for each field
+        for data_type in data_types:
+            if data_type == 'string':
+                # Generate a fake email if the field is 'email'
+                if headers[data_types.index(data_type)] == 'email':
+                    if random.choice([True, False]):
+                        row.append(fake.email())
+                    else:
+                        row.append(str(random.randint(1000, 9999)))
+                # Generate a fake name if the field is 'name'
+                elif headers[data_types.index(data_type)] == 'name':
+                    if random.choice([True, False]):
+                        row.append(fake.name())
+                    else:
+                        row.append(str(random.randint(1000, 9999)))
+                # Generate a fake id if the field is 'id'
+                else:
+                    row.append(str(random.randint(1000, 9999)))
+            elif data_type == 'number':
+                # Generate a fake phone number if the field is 'phone_number'
+                if headers[data_types.index(data_type)] == 'phone_number':
+                    if random.choice([True, False]):
+                        row.append(fake.phone_number())
+                    else:
+                        row.append(fake.word())
+                # Generate a fake id if the field is 'id'
+                else:
+                    row.append(random.randint(1000, 9999))
+            elif data_type == 'date':
+                # Generate a fake date_of_birth if the field is 'date_of_birth'
+                if headers[data_types.index(data_type)] == 'date_of_birth':
+                    if random.choice([True, False]):
+                        row.append(fake.date_of_birth(minimum_age=18, maximum_age=90))
+                    else:
+                        row.append(fake.word())
+                else:
+                    row.append(fake.date())
+
+        # Write the row data to the CSV file
+        writer.writerow(row)

@@ -1,0 +1,43 @@
+import csv
+import random
+import faker
+
+# Initialize Faker library
+fake = faker.Faker()
+
+# Define the column headers
+headers = ['id', 'name', 'email', 'date_of_birth', 'phone_number', 'ID']
+
+# Open the CSV file in write mode
+with open('dummy_data.csv', 'w', newline='') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=headers)
+
+    # Write the headers
+    writer.writeheader()
+
+    # Generate 100 rows of dummy data
+    for i in range(100):
+        # Create a dictionary for the row
+        row = {}
+
+        # Generate a unique ID
+        row['id'] = i + 1
+
+        # Generate a random name
+        row['name'] = fake.name()
+
+        # Generate a random email
+        if i % 10 != 0:  # Skip email for every 10th record
+            row['email'] = fake.email()
+
+        # Generate a random date of birth
+        row['date_of_birth'] = fake.date_of_birth().isoformat()
+
+        # Generate a random phone number
+        row['phone_number'] = fake.phone_number()
+
+        # Generate a random ID as string
+        row['ID'] = str(random.randint(1000, 9999))
+
+        # Write the row
+        writer.writerow(row)
