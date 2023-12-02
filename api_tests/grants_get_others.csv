@@ -1,0 +1,41 @@
+import csv
+import random
+import faker
+
+# Initialize Faker Library
+fake = faker.Faker()
+
+def generate_dummy_data(file_name, num_rows):
+    # Define column names
+    fieldnames = ['email', 'name']
+
+    with open(file_name, 'w', newline='') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+        # Write CSV Header
+        writer.writeheader()
+
+        # Generate and write data rows
+        for i in range(num_rows):
+            row = {}
+
+            # Generate email
+            if i % 2 == 0:  # Skip some values
+                row['email'] = ''
+            elif i % 5 == 0:  # Use inappropriate data type
+                row['email'] = str(random.randint(10000, 99999))
+            else:
+                row['email'] = fake.email()
+
+            # Generate name
+            if i % 3 == 0:  # Skip some values
+                row['name'] = ''
+            elif i % 7 == 0:  # Use inappropriate data type
+                row['name'] = str(random.randint(10000, 99999))
+            else:
+                row['name'] = fake.name()
+
+            # Write row to CSV
+            writer.writerow(row)
+
+generate_dummy_data('dummy_data.csv', 100)

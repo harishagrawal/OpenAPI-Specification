@@ -1,0 +1,29 @@
+import random
+import csv
+import faker
+from datetime import datetime, timedelta
+
+def generate_dummy_data(num_records=10):
+    fake = faker.Faker()
+    fieldnames = ['id', 'reference', 'startDate', 'endDate', 'credentialUrl']
+
+    with open('dummy_data.csv', 'w', newline='') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+
+        for _ in range(num_records):
+            id = random.randint(1, 1000)
+            reference = fake.word()
+            start_date = fake.date_between(start_date='-1y', end_date='today')
+            end_date = start_date + timedelta(days=random.randint(1, 365)) # end date is always after start date
+            credential_url = fake.uri()
+
+            writer.writerow({
+                'id': id,
+                'reference': reference,
+                'startDate': start_date,
+                'endDate': end_date,
+                'credentialUrl': credential_url
+            })
+
+generate_dummy_data()

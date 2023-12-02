@@ -1,0 +1,32 @@
+import csv
+import random
+import faker
+
+# Create a Faker instance
+fake = faker.Faker()
+
+# Define a list of column headers
+headers = ['name', 'image', 'settings']
+
+# Define a list to store rows
+rows = []
+
+# Generate rows
+for i in range(10):
+    # Generate a name
+    name = random.choice([fake.name(), str(random.randint(1000,9999))])
+    
+    # Generate an image URL
+    image = random.choice([fake.image_url(), str(random.randint(1000,9999))])
+    
+    # Generate settings
+    settings = random.choice([fake.word(), str(random.randint(1000,9999))])
+    
+    # Append the row to the list of rows
+    rows.append([name, image, settings])
+
+# Write the CSV file
+with open('dummy_data.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(headers)
+    writer.writerows(rows)

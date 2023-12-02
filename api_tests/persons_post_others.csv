@@ -1,0 +1,36 @@
+import csv
+import random
+import faker
+
+# Initialize Faker library
+fake = faker.Faker()
+
+# Define the variable names
+variables = ["birthDate", "initials", "lastName", "firstName", "middleName", "birthPlace", "phone", "email", "postalCode", "houseNumber", "houseNumberPostfix", "countryCode", "reference"]
+
+# Open the CSV file in write mode
+with open('dummy_data.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    
+    # Write the variable names as the first row in the CSV file
+    writer.writerow(variables)
+    
+    # Generate 100 rows of dummy data
+    for _ in range(100):
+        # Generate random values for each variable
+        birthDate = fake.date_of_birth(minimum_age=18, maximum_age=90).isoformat() if random.choice([True, False]) else ""
+        initials = fake.random_letter() + "." if random.choice([True, False]) else ""
+        lastName = fake.last_name() if random.choice([True, False]) else ""
+        firstName = fake.first_name() if random.choice([True, False]) else ""
+        middleName = fake.first_name() if random.choice([True, False]) else ""
+        birthPlace = fake.city() if random.choice([True, False]) else ""
+        phone = fake.phone_number() if random.choice([True, False]) else ""
+        email = fake.email() if random.choice([True, False]) else ""
+        postalCode = fake.zipcode() if random.choice([True, False]) else ""
+        houseNumber = str(fake.building_number()) if random.choice([True, False]) else ""
+        houseNumberPostfix = fake.random_letter() if random.choice([True, False]) else ""
+        countryCode = fake.country_code() if random.choice([True, False]) else ""
+        reference = str(fake.random_int(min=1000, max=9999)) if random.choice([True, False]) else ""
+        
+        # Write the generated values as a row in the CSV file
+        writer.writerow([birthDate, initials, lastName, firstName, middleName, birthPlace, phone, email, postalCode, houseNumber, houseNumberPostfix, countryCode, reference])

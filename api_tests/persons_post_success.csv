@@ -1,0 +1,36 @@
+import faker
+import csv
+import random
+from faker import Faker
+fake = Faker()
+
+def generate_random_data():
+    data = {
+        "initials": ''.join(random.choice('ABCDEFGHIJKLMNOPQRSTUVWXYZ') for _ in range(2)),
+        "firstName": fake.first_name(),
+        "middleName": fake.first_name(),
+        "lastName": fake.last_name(),
+        "birthDate": fake.date_of_birth(minimum_age=18, maximum_age=90).strftime('%m-%d-%Y'),
+        "birthPlace": fake.city(),
+        "phone": fake.phone_number(),
+        "email": fake.email(),
+        "postalCode": fake.zipcode(),
+        "houseNumber": fake.building_number(),
+        "houseNumberPostfix": fake.random_int(min=1, max=99),
+        "countryCode": fake.country_code(),
+        "reference": fake.uuid4()
+    }
+    return data
+
+def generate_csv_file(num_rows, filename):
+    with open(filename, 'w', newline='') as csvfile:
+        fieldnames = ["initials","firstName","middleName","lastName","birthDate","birthPlace","phone","email","postalCode","houseNumber","houseNumberPostfix","countryCode","reference"]
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+        writer.writeheader()
+        for _ in range(num_rows):
+            writer.writerow(generate_random_data())
+    print(f"Data successfully written to {filename}")
+
+# Generate a CSV file with 100 rows of data
+generate_csv_file(100, 'dummy_data.csv')

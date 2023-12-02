@@ -1,0 +1,34 @@
+import csv
+import random
+import faker
+from datetime import datetime, timedelta
+
+# Initialize Faker library
+fake = faker.Faker()
+
+# Define the header
+header = ['name', 'birthDate']
+
+# Define the data
+data = []
+
+# Generate the data
+for _ in range(10):
+    row = []
+    # Generate random name
+    if random.choice([True, False]):
+        row.append(fake.name())
+    else:
+        row.append('')
+    # Generate random birthDate
+    if random.choice([True, False]):
+        row.append(fake.date_between(start_date='-30y', end_date='today').strftime('%Y-%m-%d'))
+    else:
+        row.append('')
+    data.append(row)
+
+# Write the data to a CSV file
+with open('dummy.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(header)
+    writer.writerows(data)

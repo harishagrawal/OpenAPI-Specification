@@ -1,0 +1,28 @@
+import random
+import csv
+import faker
+
+# Initialize faker generator
+fake = faker.Faker()
+
+def generate_dummy_data(num_records=100):
+    # Define headers
+    headers = ['email', 'otp', 'client']
+
+    # Open CSV file
+    with open('dummy_data.csv', 'w', newline='') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=headers)
+
+        # Write headers
+        writer.writeheader()
+
+        # Generate and write data
+        for _ in range(num_records):
+            writer.writerow({
+                'email': fake.email(),
+                'otp': random.randint(1000, 9999),  # 4 digit OTP
+                'client': fake.company()
+            })
+
+# Generate 100 dummy records
+generate_dummy_data(100)
