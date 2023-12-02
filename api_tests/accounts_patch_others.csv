@@ -1,0 +1,8 @@
+df = pd.DataFrame({
+    'invalidEmail': ['8120', '4372', '', '', ''],
+    'noEmail': ['5522', '4591', '9761', '', '']
+})
+
+csv_path = '/mnt/data/dummy_profiles.csv'
+df.to_csv(csv_path, index=False, header=True)
+

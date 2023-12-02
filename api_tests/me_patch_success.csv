@@ -1,0 +1,4 @@
+with open('/mnt/data/dummy_profiles.csv', 'r') as file:
+    content = file.read()
+    print(content)
+
