@@ -1,0 +1,10 @@
+id,value,full_name,statusCode,scenario
+1,example_value,Marty McFly,200,Successful responses: OK
+2,example_value,Invalid Filter,400,Client error responses: Bad Request
+3,example_value,Authentication Required,401,Client error responses: Unauthorized
+4,example_value,Kafka Clusters Per Org Quota Exceeded,402,Client error responses: Payment Required
+5,example_value,User Access Unauthorized,403,Client error responses: Forbidden
+6,example_value,Not Found,404,Client error responses: Not Found
+7,example_value,Validation Failed,422,Client error responses: Unprocessable Entity
+8,example_value,Too Many Requests,429,Client error responses: Too Many Requests
+9,example_value,DeLorean Out Of Gas,500,Server error responses: Internal Server Error

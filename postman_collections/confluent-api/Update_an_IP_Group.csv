@@ -1,0 +1,17 @@
+id,value,group_name,0,statusCode,scenario
+api_version,fcpm/v2,ComputePool,0,200,Successful responses: OK
+id,R15hoiDIq8Nxu/lY4mPO3DwAVIfU5W7OI+efsB607mLgHTnVW5XJGVqX2ysDx987,ComputePool,1,200,Successful responses: OK
+kind,ComputePool,ComputePool,2,200,Successful responses: OK
+id,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,ComputePool,0,400,Client error responses: Bad Request
+status,400,ComputePool,1,400,Client error responses: Bad Request
+id,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,ComputePool,0,401,Client error responses: Unauthorized
+status,401,ComputePool,1,401,Client error responses: Unauthorized
+id,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,ComputePool,0,403,Client error responses: Forbidden
+status,403,ComputePool,1,403,Client error responses: Forbidden
+id,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,ComputePool,0,404,Client error responses: Not Found
+status,404,ComputePool,1,404,Client error responses: Not Found
+status,422,ComputePool,0,422,Client error responses: Unprocessable Entity
+id,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,ComputePool,1,422,Client error responses: Unprocessable Entity
+id,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,ComputePool,0,429,Client error responses: Too Many Requests
+status,500,ComputePool,1,500,Server error responses: Internal Server Error
+id,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,ComputePool,0,500,Server error responses: Internal Server Error

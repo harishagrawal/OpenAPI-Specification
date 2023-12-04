@@ -1,0 +1,8 @@
+resource_type,resource_name,pattern_type,principal,host,operation,permission,cluster_id,statusCode,scenario
+TOPIC,topic-,PREFIXED,User:alice,*,ALL,ALLOW,cluster-1,200,Successful responses: OK
+CLUSTER,kafka-cluster,LITERAL,User:alice,*,DESCRIBE,DENY,cluster-1,200,Successful responses: OK
+UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,400,Client error responses: Bad Request
+UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,401,Client error responses: Unauthorized
+UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,403,Client error responses: Forbidden
+UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,429,Client error responses: Too Many Requests
+UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,500,Server error responses: Internal Server Error

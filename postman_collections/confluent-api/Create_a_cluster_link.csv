@@ -1,0 +1,6 @@
+link_name,validate_only,validate_link,cluster_id,source_cluster_id,destination_cluster_id,remote_cluster_id,cluster_link_id,value,statusCode,scenario
+link-sb1,false,https://api.confluent.cloud/v2/kafka-clusters/lkc-f3a90de,cluster-123,source-cluster-456,destination-cluster-789,remote-cluster-012,cluster-link-345,value-678,204,Successful responses: No Content
+link-sb2,true,https://api.confluent.cloud/v2/kafka-clusters/lkc-f3a90de,cluster-234,source-cluster-567,destination-cluster-890,remote-cluster-123,cluster-link-456,value-789,400,Client error responses: Bad Request
+link-sb3,false,https://api.confluent.cloud/v2/kafka-clusters/lkc-f3a90de,cluster-345,source-cluster-678,destination-cluster-901,remote-cluster-234,cluster-link-567,value-890,401,Client error responses: Unauthorized
+link-sb4,true,https://api.confluent.cloud/v2/kafka-clusters/lkc-f3a90de,cluster-456,source-cluster-789,destination-cluster-012,remote-cluster-345,cluster-link-678,value-901,429,Client error responses: Too Many Requests
+link-sb5,false,https://api.confluent.cloud/v2/kafka-clusters/lkc-f3a90de,cluster-567,source-cluster-890,destination-cluster-123,remote-cluster-456,cluster-link-789,value-012,500,Server error responses: Internal Server Error

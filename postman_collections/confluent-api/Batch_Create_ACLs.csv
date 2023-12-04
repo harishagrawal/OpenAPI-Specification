@@ -1,0 +1,7 @@
+cluster_id,value,statusCode,scenario
+1,201,Successful responses: Created,swaggerDataInfo.api_version.datatype
+2,400,Client error responses: Bad Request,swaggerDataInfo.kind.datatype
+3,401,Client error responses: Unauthorized,swaggerDataInfo.id.datatype
+4,403,Client error responses: Forbidden,swaggerDataInfo.secret.datatype
+5,429,Client error responses: Too Many Requests,swaggerDataInfo.display_name.datatype
+6,500,Server error responses: Internal Server Error,swaggerDataInfo.description.datatype

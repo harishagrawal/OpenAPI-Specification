@@ -1,0 +1,10 @@
+spec,value,statusCode,scenario
+raw,202,Successful responses: Accepted
+raw,400,Client error responses: Bad Request
+raw,401,Client error responses: Unauthorized
+raw,402,Client error responses: Payment Required
+raw,403,Client error responses: Forbidden
+raw,409,Client error responses: Conflict
+raw,422,Client error responses: Unprocessable Entity
+raw,429,Client error responses: Too Many Requests
+raw,500,Server error responses: Internal Server Error

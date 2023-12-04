@@ -1,0 +1,7 @@
+principal,role_name,crn_pattern,page_size,page_token,statusCode,scenario
+User:u-111aaa,CloudClusterAdmin,crn://confluent.cloud/organization=1111aaaa-11aa-11aa-11aa-111111aaaaaa/environment=env-aaa1111/cloud-cluster=lkc-1111aaa,50,token-1,200,Successful responses: OK
+User:u-222bbb,CloudClusterAdmin,crn://confluent.cloud/organization=2222bbbb-22bb-22bb-22bb-222222bbbbbb/environment=env-bbb2222/cloud-cluster=lkc-2222bbb,50,token-2,400,Client error responses: Bad Request
+User:u-333ccc,CloudClusterAdmin,crn://confluent.cloud/organization=3333cccc-33cc-33cc-33cc-333333cccccc/environment=env-ccc3333/cloud-cluster=lkc-3333ccc,50,token-3,401,Client error responses: Unauthorized
+User:u-444ddd,CloudClusterAdmin,crn://confluent.cloud/organization=4444dddd-44dd-44dd-44dd-444444dddddd/environment=env-ddd4444/cloud-cluster=lkc-4444ddd,50,token-4,403,Client error responses: Forbidden
+User:u-555eee,CloudClusterAdmin,crn://confluent.cloud/organization=5555eeee-55ee-55ee-55ee-555555eeeeee/environment=env-eee5555/cloud-cluster=lkc-5555eee,50,token-5,429,Client error responses: Too Many Requests
+User:u-666fff,CloudClusterAdmin,crn://confluent.cloud/organization=6666ffff-66ff-66ff-66ff-666666ffffff/environment=env-fff6666/cloud-cluster=lkc-6666fff,50,token-6,500,Server error responses: Internal Server Error

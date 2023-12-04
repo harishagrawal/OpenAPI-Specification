@@ -1,0 +1,8 @@
+validate_only,cluster_id,link_name,0,1,mirror_topic_name_pattern,statusCode,scenario
+false,cluster-1,my-new-link-1,0,0,topic-sb,200,Successful responses: OK
+false,cluster-1,my-new-link-1,1,10000,topic-sb,200,Successful responses: OK
+false,cluster-1,my-new-link-1,2,40000,topic-sb,200,Successful responses: OK
+false,cluster-1,link-1,0,0,,400,Client error responses: Bad Request
+false,cluster-1,link-1,0,0,,401,Client error responses: Unauthorized
+false,cluster-1,link-1,0,0,,429,Client error responses: Too Many Requests
+false,cluster-1,link-1,0,0,,500,Server error responses: Internal Server Error

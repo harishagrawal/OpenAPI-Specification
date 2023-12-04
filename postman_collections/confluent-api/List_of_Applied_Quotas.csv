@@ -1,0 +1,7 @@
+scope,environment,network,kafka_cluster,id,page_size,page_token,statusCode,scenario
+ORGANIZATION,Public Env,my-gcp-network,lkc-00000,iam.max_environments.per_org,123,YIXRY97wWYmwzrax4dld,200,Successful responses: OK
+ORGANIZATION,Public Env,my-gcp-network,lkc-f3a90de,iam.max_environments.per_org,123,YIXRY97wWYmwzrax4dld,400,Client error responses: Bad Request
+ORGANIZATION,Public Env,my-gcp-network,lkc-f3a90de,iam.max_environments.per_org,123,YIXRY97wWYmwzrax4dld,401,Client error responses: Unauthorized
+ORGANIZATION,Public Env,my-gcp-network,lkc-f3a90de,iam.max_environments.per_org,123,YIXRY97wWYmwzrax4dld,403,Client error responses: Forbidden
+ORGANIZATION,Public Env,my-gcp-network,lkc-f3a90de,iam.max_environments.per_org,123,YIXRY97wWYmwzrax4dld,429,Client error responses: Too Many Requests
+ORGANIZATION,Public Env,my-gcp-network,lkc-f3a90de,iam.max_environments.per_org,123,YIXRY97wWYmwzrax4dld,500,Server error responses: Internal Server Error

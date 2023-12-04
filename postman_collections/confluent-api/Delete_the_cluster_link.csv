@@ -1,0 +1,6 @@
+force,validate_only,cluster_id,link_name,statusCode,scenario
+true,false,lkc-3a2a1,link-12a3b,200,Successful responses: OK
+false,true,lkc-4b3b2,link-23b4c,400,Client error responses: Bad Request
+true,false,lkc-5c4c3,link-34c5d,401,Client error responses: Unauthorized
+false,true,lkc-6d5d4,link-45d6e,429,Client error responses: Too Many Requests
+true,false,lkc-7e6e5,link-56e7f,500,Server error responses: Internal Server Error

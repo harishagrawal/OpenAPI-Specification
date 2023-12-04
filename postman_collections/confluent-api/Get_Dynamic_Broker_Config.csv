@@ -1,0 +1,6 @@
+cluster_id,name,statusCode,scenario
+cluster-1,compression.type,200,Successful responses: OK
+400,Cannot deserialize value of type `java.lang.Integer` from String \"A\": not a valid `java.lang.Integer` value,400,Client error responses: Bad Request
+40101,Authentication failed,401,Client error responses: Unauthorized
+40301,Request is not authorized,403,Client error responses: Forbidden
+500,Internal Server Error,500,Server error responses: Internal Server Error
