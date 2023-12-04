@@ -1,0 +1,11 @@
+id,did,name,image,email,settings,createdAt,updatedAt
+1,10,John Doe,profile1.jpg,johndoe1@example.com,notifications: on,2021-01-01,2021-02-01
+2,20,Jane Doe,profile2.jpg,janedoe2@example.com,notifications: off,2021-01-02,2021-02-02
+3,30,James Smith,profile3.jpg,jamessmith3@example.com,notifications: on,2021-01-03,2021-02-03
+4,40,Jessica Smith,profile4.jpg,jessicasmith4@example.com,notifications: off,2021-01-04,2021-02-04
+5,50,Robert Johnson,profile5.jpg,robertjohnson5@example.com,notifications: on,2021-01-05,2021-02-05
+6,60,Mary Johnson,profile6.jpg,maryjohnson6@example.com,notifications: off,2021-01-06,2021-02-06
+7,70,Michael Brown,profile7.jpg,michaelbrown7@example.com,notifications: on,2021-01-07,2021-02-07
+8,80,Sarah Brown,profile8.jpg,sarahbrown8@example.com,notifications: off,2021-01-08,2021-02-08
+9,90,David Garcia,profile9.jpg,davidgarcia9@example.com,notifications: on,2021-01-09,2021-02-09
+10,100,Linda Garcia,profile10.jpg,lindagarcia10@example.com,notifications: off,2021-01-10,2021-02-10
