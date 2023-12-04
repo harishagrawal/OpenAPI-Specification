@@ -1,0 +1,6 @@
+connector_name,environment_id,kafka_cluster_id,statusCode,scenario
+MyGcsLogsBucketConnector,prod,pkc-xxxxx.us-west-2.aws.confluent.cloud:9092,200,Successful responses: OK
+MyGcsLogsBucketConnector,prod,pkc-xxxxx.us-west-2.aws.confluent.cloud:9092,401,Client error responses: Unauthorized
+MyGcsLogsBucketConnector,prod,pkc-xxxxx.us-west-2.aws.confluent.cloud:9092,404,Client error responses: Not Found
+MyGcsLogsBucketConnector,prod,pkc-xxxxx.us-west-2.aws.confluent.cloud:9092,429,Client error responses: Too Many Requests
+MyGcsLogsBucketConnector,prod,pkc-xxxxx.us-west-2.aws.confluent.cloud:9092,500,Server error responses: Internal Server Error

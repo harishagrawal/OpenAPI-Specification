@@ -1,0 +1,6 @@
+validate_only,cluster_id,link_name,value,statusCode,scenario
+false,lkc-f3a90de,flink_compute_pool_0,2006-01-02T15:04:05-07:00,204,Successful responses: No Content
+false,lkc-xxxxx,flink_compute_pool_0,Cannot deserialize value of type `java.lang.Integer` from String "A": not a valid `java.lang.Integer` value,400,Client error responses: Bad Request
+true,lkc-xxxxx,flink_compute_pool_0,Authentication failed,401,Client error responses: Unauthorized
+true,lkc-f3a90de,flink_compute_pool_0,2006-01-02T15:04:05-07:00,429,Client error responses: Too Many Requests
+true,lkc-f3a90de,flink_compute_pool_0,Internal Server Error,500,Server error responses: Internal Server Error

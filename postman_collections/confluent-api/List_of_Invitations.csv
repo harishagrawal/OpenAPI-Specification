@@ -1,0 +1,7 @@
+email,status,user,creator,page_size,page_token,statusCode,scenario
+johndoe@confluent.io,INVITE_STATUS_SENT,u-j93dy8,R15hoiDIq8Nxu/lY4mPO3DwAVIfU5W7OI+efsB607mLgHTnVW5XJGVqX2ysDx987,123,bcAOehAY8F16YD84Z1wT,200,Successful responses: OK
+johndoe@confluent.io,INVITE_STATUS_SENT,u-j93dy8,R15hoiDIq8Nxu/lY4mPO3DwAVIfU5W7OI+efsB607mLgHTnVW5XJGVqX2ysDx987,123,bcAOehAY8F16YD84Z1wT,400,Client error responses: Bad Request
+johndoe@confluent.io,INVITE_STATUS_SENT,u-j93dy8,R15hoiDIq8Nxu/lY4mPO3DwAVIfU5W7OI+efsB607mLgHTnVW5XJGVqX2ysDx987,123,bcAOehAY8F16YD84Z1wT,401,Client error responses: Unauthorized
+johndoe@confluent.io,INVITE_STATUS_SENT,u-j93dy8,R15hoiDIq8Nxu/lY4mPO3DwAVIfU5W7OI+efsB607mLgHTnVW5XJGVqX2ysDx987,123,bcAOehAY8F16YD84Z1wT,403,Client error responses: Forbidden
+johndoe@confluent.io,INVITE_STATUS_SENT,u-j93dy8,R15hoiDIq8Nxu/lY4mPO3DwAVIfU5W7OI+efsB607mLgHTnVW5XJGVqX2ysDx987,123,bcAOehAY8F16YD84Z1wT,429,Client error responses: Too Many Requests
+johndoe@confluent.io,INVITE_STATUS_SENT,u-j93dy8,R15hoiDIq8Nxu/lY4mPO3DwAVIfU5W7OI+efsB607mLgHTnVW5XJGVqX2ysDx987,123,bcAOehAY8F16YD84Z1wT,500,Server error responses: Internal Server Error

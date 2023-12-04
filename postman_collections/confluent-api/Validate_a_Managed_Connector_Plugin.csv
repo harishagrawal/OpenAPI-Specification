@@ -1,0 +1,6 @@
+plugin_name,environment_id,kafka_cluster_id,eu_8f2,Duis60b,statusCode,scenario
+io.confluent.connect.gcs.GcsSinkConnector,cloud.environment,lkc-f3a90de,cloud.provider,connector.class,200,Successful responses: OK
+io.confluent.connect.gcs.GcsSinkConnector,cloud.environment,lkc-f3a90de,cloud.provider,connector.class,401,Client error responses: Unauthorized
+io.confluent.connect.gcs.GcsSinkConnector,cloud.environment,lkc-f3a90de,cloud.provider,connector.class,404,Client error responses: Not Found
+io.confluent.connect.gcs.GcsSinkConnector,cloud.environment,lkc-f3a90de,cloud.provider,connector.class,429,Client error responses: Too Many Requests
+io.confluent.connect.gcs.GcsSinkConnector,cloud.environment,lkc-f3a90de,cloud.provider,connector.class,500,Server error responses: Internal Server Error
