@@ -1,0 +1,8 @@
+cluster_id,topic_name,name,statusCode,scenario
+lkc-f3a90de,ComputePool,iam.max_environments.per_org,204,Successful responses: No Content
+lkc-f3a90de,ComputePool,R15hoiDIq8Nxu/lY4mPO3DwAVIfU5W7OI+efsB607mLgHTnVW5XJGVqX2ysDx987,400,Client error responses: Bad Request
+lkc-f3a90de,ComputePool,flink_compute_pool_0,401,Client error responses: Unauthorized
+lkc-f3a90de,ComputePool,This quota defines limits on how much the target principals can use cluster lkc-xxxxx,403,Client error responses: Forbidden
+lkc-f3a90de,ComputePool,https://api.confluent.cloud/v2/kafka-clusters/lkc-f3a90de,404,Client error responses: Not Found
+lkc-f3a90de,ComputePool,crn://confluent.cloud/kafka=lkc-f3a90de,429,Client error responses: Too Many Requests
+lkc-f3a90de,ComputePool,2006-01-02T15:04:05-07:00,500,Server error responses: Internal Server Error

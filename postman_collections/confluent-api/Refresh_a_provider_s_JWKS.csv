@@ -1,0 +1,9 @@
+provider_id,value,statusCode,scenario
+1,40009834.83663845,200,Successful responses: OK
+2,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,400,Client error responses: Bad Request
+3,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,401,Client error responses: Unauthorized
+4,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,403,Client error responses: Forbidden
+5,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,404,Client error responses: Not Found
+6,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,422,Client error responses: Unprocessable Entity
+7,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,429,Client error responses: Too Many Requests
+8,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,500,Server error responses: Internal Server Error

@@ -1,0 +1,8 @@
+environment,network,kafka_cluster,id,statusCode,scenario
+env-00000,n-12034,lkc-00000,iam.max_environments.per_org,200,Successful responses: OK
+env-00000,n-12034,lkc-00000,iam.max_environments.per_org,400,Client error responses: Bad Request
+env-00000,n-12034,lkc-00000,iam.max_environments.per_org,401,Client error responses: Unauthorized
+env-00000,n-12034,lkc-00000,iam.max_environments.per_org,403,Client error responses: Forbidden
+env-00000,n-12034,lkc-00000,iam.max_environments.per_org,404,Client error responses: Not Found
+env-00000,n-12034,lkc-00000,iam.max_environments.per_org,429,Client error responses: Too Many Requests
+env-00000,n-12034,lkc-00000,iam.max_environments.per_org,500,Server error responses: Internal Server Error

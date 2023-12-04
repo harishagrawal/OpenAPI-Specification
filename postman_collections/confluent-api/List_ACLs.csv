@@ -1,0 +1,7 @@
+resource_type,resource_name,pattern_type,principal,host,operation,permission,cluster_id,statusCode,scenario
+TOPIC,topic-,PREFIXED,User:alice,*,ALL,ALLOW,cluster-1,200,Successful responses: OK
+TOPIC,topic-,PREFIXED,User:alice,*,ALL,ALLOW,cluster-1,400,Client error responses: Bad Request
+TOPIC,topic-,PREFIXED,User:alice,*,ALL,ALLOW,cluster-1,401,Client error responses: Unauthorized
+TOPIC,topic-,PREFIXED,User:alice,*,ALL,ALLOW,cluster-1,403,Client error responses: Forbidden
+TOPIC,topic-,PREFIXED,User:alice,*,ALL,ALLOW,cluster-1,429,Client error responses: Too Many Requests
+TOPIC,topic-,PREFIXED,User:alice,*,ALL,ALLOW,cluster-1,500,Server error responses: Internal Server Error

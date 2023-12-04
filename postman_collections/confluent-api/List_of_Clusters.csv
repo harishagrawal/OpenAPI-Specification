@@ -1,0 +1,7 @@
+environment,page_size,page_token,statusCode,scenario
+prod,20,1,200,Successful responses: OK
+dev,50,2,400,Client error responses: Bad Request
+test,100,3,401,Client error responses: Unauthorized
+prod,200,4,403,Client error responses: Forbidden
+dev,250,5,429,Client error responses: Too Many Requests
+test,300,6,500,Server error responses: Internal Server Error

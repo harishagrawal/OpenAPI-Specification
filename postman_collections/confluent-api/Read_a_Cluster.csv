@@ -1,0 +1,8 @@
+environment,id,statusCode,scenario
+veniam consequat et,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,200,Successful responses: OK
+veniam consequat et,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,400,Client error responses: Bad Request
+veniam consequat et,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,401,Client error responses: Unauthorized
+veniam consequat et,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,403,Client error responses: Forbidden
+veniam consequat et,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,404,Client error responses: Not Found
+veniam consequat et,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,429,Client error responses: Too Many Requests
+veniam consequat et,ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,500,Server error responses: Internal Server Error

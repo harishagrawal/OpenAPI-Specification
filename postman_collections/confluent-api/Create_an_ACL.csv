@@ -1,0 +1,7 @@
+cluster_id,resource_type,resource_name,pattern_type,principal,host,operation,permission,statusCode,scenario
+lkc-xxxxx,CLUSTER,kafka-cluster,UNKNOWN,User:u-111aaa,kafka-cluster,Read,Allow,201,Successful responses: Created
+lkc-xxxxx,CLUSTER,kafka-cluster,UNKNOWN,User:u-111aaa,kafka-cluster,Read,Allow,400,Client error responses: Bad Request
+lkc-xxxxx,CLUSTER,kafka-cluster,UNKNOWN,User:u-111aaa,kafka-cluster,Read,Allow,401,Client error responses: Unauthorized
+lkc-xxxxx,CLUSTER,kafka-cluster,UNKNOWN,User:u-111aaa,kafka-cluster,Read,Allow,403,Client error responses: Forbidden
+lkc-xxxxx,CLUSTER,kafka-cluster,UNKNOWN,User:u-111aaa,kafka-cluster,Read,Allow,429,Client error responses: Too Many Requests
+lkc-xxxxx,CLUSTER,kafka-cluster,UNKNOWN,User:u-111aaa,kafka-cluster,Read,Allow,500,Server error responses: Internal Server Error

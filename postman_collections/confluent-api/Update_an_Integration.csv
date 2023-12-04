@@ -1,0 +1,7 @@
+id,value,display_name,description,statusCode,scenario
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,invalid_filter,Invalid Filter,The 'delorean' resource can't be filtered by 'num_doors',200,Successful responses: OK
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,user_unauthenticated,Authentication Required,Valid authentication credentials must be provided,400,Client error responses: Bad Request
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,quota_exceeded,Kafka Clusters Per Org Quota Exceeded,The request would exceed the quota: kafka_clusters_per_environment,401,Client error responses: Unauthorized
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,user_unauthorized,User Access Unauthorized,The user 'mcfly' is not allowed to access the 'delorean' resource without the 'plutonium' role.,402,Client error responses: Payment Required
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,Not Found,Not Found,Not Found,403,Client error responses: Forbidden
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,invalid_configuration,Validation Failed,The property '/cluster/storage_size' of type string did not match the following type: integer,404,

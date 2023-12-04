@@ -1,0 +1,5 @@
+provider_id,id,value,display_name,description,identity_claim,filter,statusCode,scenario
+fcpm/v2,ComputePool,iam.max_environments.per_org,flink_compute_pool_0,This quota defines limits on how much the target principals can use cluster lkc-xxxxx,User:u-111aaa,"\"engineering\" in claims.group || \"marketing\" in claims.group",200,Successful responses: OK
+fcpm/v2,ComputePool,iam.max_environments.per_org,flink_compute_pool_0,This quota defines limits on how much the target principals can use cluster lkc-xxxxx,User:u-111aaa,"\"engineering\" in claims.group || \"marketing\" in claims.group",400,Client error responses: Bad Request
+fcpm/v2,ComputePool,iam.max_environments.per_org,flink_compute_pool_0,This quota defines limits on how much the target principals can use cluster lkc-xxxxx,User:u-111aaa,"\"engineering\" in claims.group || \"marketing\" in claims.group",401,Client error responses: Unauthorized
+fcpm/v2,ComputePool,iam.max_environments.per_org,flink_compute_pool_0,This quota defines limits on how much the target principals can use cluster lkc-xxxxx,User:u-111aaa,"\"engineering\" in claims.group || \"marketing\" in claims.group",402,Client error

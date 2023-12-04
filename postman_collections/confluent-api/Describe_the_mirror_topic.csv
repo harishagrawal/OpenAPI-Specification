@@ -1,0 +1,6 @@
+cluster_id,link_name,mirror_topic_name,statusCode,scenario
+cluster-1,link-sb-1,topic-1,200,Successful responses: OK
+cluster-1,link-sb-1,topic-1,400,Client error responses: Bad Request
+cluster-1,link-sb-1,topic-1,401,Client error responses: Unauthorized
+cluster-1,link-sb-1,topic-1,429,Client error responses: Too Many Requests
+cluster-1,link-sb-1,topic-1,500,Server error responses: Internal Server Error

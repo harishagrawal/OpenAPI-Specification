@@ -1,0 +1,8 @@
+id,statusCode,scenario
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,204,Successful responses: No Content
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,400,Client error responses: Bad Request
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,401,Client error responses: Unauthorized
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,403,Client error responses: Forbidden
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,404,Client error responses: Not Found
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,429,Client error responses: Too Many Requests
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,500,Server error responses: Internal Server Error

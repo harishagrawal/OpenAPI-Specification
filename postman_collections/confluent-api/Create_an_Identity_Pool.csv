@@ -1,0 +1,10 @@
+provider_id,statusCode,scenario
+1,201,Successful responses: Created
+2,400,Client error responses: Bad Request
+3,401,Client error responses: Unauthorized
+4,402,Client error responses: Payment Required
+5,403,Client error responses: Forbidden
+6,409,Client error responses: Conflict
+7,422,Client error responses: Unprocessable Entity
+8,429,Client error responses: Too Many Requests
+9,500,Server error responses: Internal Server Error

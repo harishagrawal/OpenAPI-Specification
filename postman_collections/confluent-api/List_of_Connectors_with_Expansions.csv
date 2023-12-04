@@ -1,0 +1,6 @@
+expand,environment_id,kafka_cluster_id,statusCode,scenario
+lcc-xxxxx,prod,lkc-f3a90de,200,Successful responses: OK
+lcc-xxxxx,prod,lkc-f3a90de,401,Client error responses: Unauthorized
+lcc-xxxxx,prod,lkc-f3a90de,404,Client error responses: Not Found
+lcc-xxxxx,prod,lkc-f3a90de,429,Client error responses: Too Many Requests
+lcc-xxxxx,prod,lkc-f3a90de,500,Server error responses: Internal Server Error
