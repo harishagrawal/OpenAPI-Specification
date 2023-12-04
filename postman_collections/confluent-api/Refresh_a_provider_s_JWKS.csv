@@ -1,0 +1,26 @@
+provider_id,value,statusCode,scenario
+1,api_version,200,Successful responses: OK
+2,kind,200,Successful responses: OK
+3,id,200,Successful responses: OK
+4,secret,200,Successful responses: OK
+5,display_name,400,Client error responses: Bad Request
+6,description,400,Client error responses: Bad Request
+7,self,400,Client error responses: Bad Request
+8,resource_name,400,Client error responses: Bad Request
+9,created_at,401,Client error responses: Unauthorized
+10,updated_at,401,Client error responses: Unauthorized
+11,deleted_at,401,Client error responses: Unauthorized
+12,first,403,Client error responses: Forbidden
+13,last,403,Client error responses: Forbidden
+14,prev,403,Client error responses: Forbidden
+15,next,404,Client error responses: Not Found
+16,total_size,404,Client error responses: Not Found
+17,email,404,Client error responses: Not Found
+18,full_name,404,Client error responses: Not Found
+19,auth_type,422,Client error responses: Unprocessable Entity
+20,status,422,Client error responses: Unprocessable Entity
+21,accepted_at,429,Client error responses: Too Many Requests
+22,expires_at,429,Client error responses: Too Many Requests
+23,group_name,500,Server error responses: Internal Server Error
+24,cidr_blocks,500,Server error responses: Internal Server Error
+25,filter_name,500,Server error responses: Internal Server Error

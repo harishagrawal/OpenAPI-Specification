@@ -1,0 +1,7 @@
+cluster_id,value,validate_only,statusCode,scenario
+1,100,false,204,Successful responses: No Content
+2,200,true,400,Client error responses: Bad Request
+3,300,false,401,Client error responses: Unauthorized
+4,400,true,403,Client error responses: Forbidden
+5,500,false,429,Client error responses: Too Many Requests
+6,600,true,500,Server error responses: Internal Server Error

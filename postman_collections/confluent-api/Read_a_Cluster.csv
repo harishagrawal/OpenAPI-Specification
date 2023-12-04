@@ -1,0 +1,8 @@
+environment,id,statusCode,scenario
+fcpm/v2,iam.max_environments.per_org,200,Successful responses: OK
+fcpm/v2,iam.max_environments.per_org,400,Client error responses: Bad Request
+fcpm/v2,iam.max_environments.per_org,401,Client error responses: Unauthorized
+fcpm/v2,iam.max_environments.per_org,403,Client error responses: Forbidden
+fcpm/v2,iam.max_environments.per_org,404,Client error responses: Not Found
+fcpm/v2,iam.max_environments.per_org,429,Client error responses: Too Many Requests
+fcpm/v2,iam.max_environments.per_org,500,Server error responses: Internal Server Error

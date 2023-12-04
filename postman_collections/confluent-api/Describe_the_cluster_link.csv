@@ -1,0 +1,6 @@
+cluster_id,link_name,statusCode,scenario
+Fds7TcT9TTqEXsoRLEKMcQ,my-new-link-1,200,Successful responses: OK
+src-cluster-id,my-new-link-1,400,Client error responses: Bad Request
+src-cluster-id,my-new-link-1,401,Client error responses: Unauthorized
+src-cluster-id,my-new-link-1,429,Client error responses: Too Many Requests
+src-cluster-id,my-new-link-1,500,Server error responses: Internal Server Error

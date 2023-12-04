@@ -1,0 +1,25 @@
+id,value,group_name,0,statusCode,scenario
+api_version,fcpm/v2,ComputePool,iam.max_environments.per_org,200,Successful responses: OK
+kind,ComputePool,ComputePool,secret,400,Client error responses: Bad Request
+id,iam.max_environments.per_org,ComputePool,display_name,401,Client error responses: Unauthorized
+secret,R15hoiDIq8Nxu/lY4mPO3DwAVIfU5W7OI+efsB607mLgHTnVW5XJGVqX2ysDx987,ComputePool,description,403,Client error responses: Forbidden
+display_name,flink_compute_pool_0,ComputePool,self,404,Client error responses: Not Found
+description,This quota defines limits on how much the target principals can use cluster lkc-xxxxx,ComputePool,resource_name,422,Client error responses: Unprocessable Entity
+self,https://api.confluent.cloud/v2/kafka-clusters/lkc-f3a90de,ComputePool,created_at,429,Client error responses: Too Many Requests
+resource_name,crn://confluent.cloud/kafka=lkc-f3a90de,ComputePool,updated_at,500,Server error responses: Internal Server Error
+created_at,2006-01-02T15:04:05-07:00,ComputePool,deleted_at,200,Successful responses: OK
+updated_at,2006-01-02T15:04:05-07:00,ComputePool,first,400,Client error responses: Bad Request
+deleted_at,2006-01-02T15:04:05-07:00,ComputePool,last,401,Client error responses: Unauthorized
+first,https://api.confluent.cloud/v2/resourcekinds,ComputePool,prev,403,Client error responses: Forbidden
+last,https://api.confluent.cloud/v2/resourcekinds?page_token=bcAOehAY8F16YD84Z1wT,ComputePool,next,404,Client error responses: Not Found
+prev,https://api.confluent.cloud/v2/resourcekinds?page_token=YIXRY97wWYmwzrax4dld,ComputePool,total_size,422,Client error responses: Unprocessable Entity
+next,https://api.confluent.cloud/v2/resourcekinds?page_token=UvmDWOB1iwfAIBPj6EYb,ComputePool,email,429,Client error responses: Too Many Requests
+total_size,123,ComputePool,full_name,500,Server error responses: Internal Server Error
+email,johndoe@confluent.io,ComputePool,auth_type,200,Successful responses: OK
+full_name,Marty McFly,ComputePool,status,400,Client error responses: Bad Request
+auth_type,AUTH_TYPE_SSO,ComputePool,accepted_at,401,Client error responses: Unauthorized
+status,INVITE_STATUS_SENT,ComputePool,expires_at,403,Client error responses: Forbidden
+accepted_at,2022-07-06T17:21:33Z,ComputePool,group_name,404,Client error responses: Not Found
+expires_at,2006-01-02T15:04:05-07:00,ComputePool,cidr_blocks,422,Client error responses: Unprocessable Entity
+group_name,CorpNet,ComputePool,filter_name,429,Client error responses: Too Many Requests
+cidr_blocks,"192.168.0.

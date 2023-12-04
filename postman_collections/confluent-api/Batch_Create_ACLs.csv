@@ -1,0 +1,7 @@
+cluster_id,value,statusCode,scenario
+1,201,Successful responses: Created,Refer to helper data
+2,400,Client error responses: Bad Request,Refer to helper data
+3,401,Client error responses: Unauthorized,Refer to helper data
+4,403,Client error responses: Forbidden,Refer to helper data
+5,429,Client error responses: Too Many Requests,Refer to helper data
+6,500,Server error responses: Internal Server Error,Refer to helper data

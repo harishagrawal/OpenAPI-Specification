@@ -1,0 +1,6 @@
+cluster_id,link_name,config_name,value,statusCode,scenario
+lkc-00000,link-sb1,iam.max_environments.per_org,123,204,Successful responses: No Content
+lkc-00000,link-sb1,flink_compute_pool_0,123,400,Client error responses: Bad Request
+lkc-00000,link-sb1,This_quota_defines_limits_on_how_much_the_target_principals_can_use_cluster_lkc-xxxxx,123,401,Client error responses: Unauthorized
+lkc-00000,link-sb1,https://api.confluent.cloud/v2/kafka-clusters/lkc-f3a90de,123,429,Client error responses: Too Many Requests
+lkc-00000,link-sb1,crn://confluent.cloud/kafka=lkc-f3a90de,123,500,Server error responses: Internal Server Error

@@ -1,0 +1,10 @@
+id,value,full_name,statusCode,scenario
+1,iam.max_environments.per_org,Marty McFly,200,Successful responses: OK
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,invalid_filter,Invalid Filter,400,Client error responses: Bad Request
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,user_unauthenticated,Authentication Required,401,Client error responses: Unauthorized
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,quota_exceeded,Kafka Clusters Per Org Quota Exceeded,402,Client error responses: Payment Required
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,user_unauthorized,User Access Unauthorized,403,Client error responses: Forbidden
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,Not Found,Not Found,404,Client error responses: Not Found
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,invalid_configuration,Validation Failed,422,Client error responses: Unprocessable Entity
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,Too Many Requests,Too Many Requests,429,Client error responses: Too Many Requests
+ed42afdc-f0d5-4c0d-b428-9fc6ed6e279d,out_of_gas,DeLorean Out Of Gas,500,Server error responses: Internal Server Error

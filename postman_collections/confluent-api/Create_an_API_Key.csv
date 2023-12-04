@@ -1,0 +1,10 @@
+spec,value,statusCode,scenario
+"{\n    \"spec\": \"{{spec}}\",\n    \"metadata\": {\n        \"value\": \"{{value}}\"\n    }\n}",202,Successful responses: Accepted
+"{\n    \"spec\": \"{{spec}}\",\n    \"metadata\": {\n        \"value\": \"{{value}}\"\n    }\n}",400,Client error responses: Bad Request
+"{\n    \"spec\": \"{{spec}}\",\n    \"metadata\": {\n        \"value\": \"{{value}}\"\n    }\n}",401,Client error responses: Unauthorized
+"{\n    \"spec\": \"{{spec}}\",\n    \"metadata\": {\n        \"value\": \"{{value}}\"\n    }\n}",402,Client error responses: Payment Required
+"{\n    \"spec\": \"{{spec}}\",\n    \"metadata\": {\n        \"value\": \"{{value}}\"\n    }\n}",403,Client error responses: Forbidden
+"{\n    \"spec\": \"{{spec}}\",\n    \"metadata\": {\n        \"value\": \"{{value}}\"\n    }\n}",409,Client error responses: Conflict
+"{\n    \"spec\": \"{{spec}}\",\n    \"metadata\": {\n        \"value\": \"{{value}}\"\n    }\n}",422,Client error responses: Unprocessable Entity
+"{\n    \"spec\": \"{{spec}}\",\n    \"metadata\": {\n        \"value\": \"{{value}}\"\n    }\n}",429,Client error responses: Too Many Requests
+"{\n    \"spec\": \"{{spec}}\",\n    \"metadata\": {\n        \"value\": \"{{value}}\"\n    }\n}",500,Server error responses: Internal Server Error

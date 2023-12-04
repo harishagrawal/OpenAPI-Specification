@@ -1,0 +1,6 @@
+environment_id,kafka_cluster_id,name,connector.class,kafka.api.key,kafka.api.secret,confluent.connector.type,confluent.custom.plugin.id,confluent.custom.connection.endpoints,confluent.custom.schema.registry.auto,statusCode,scenario
+prod,aws,MyGcsLogsBucketConnector,GcsSink,****************,****************,[Refer Helper Data],[Refer Helper Data],[Refer Helper Data],[Refer Helper Data],201,Successful responses: Created
+prod,aws,MyGcsLogsBucketConnector,GcsSink,****************,****************,[Refer Helper Data],[Refer Helper Data],[Refer Helper Data],[Refer Helper Data],400,Client error responses: Bad Request
+prod,aws,MyGcsLogsBucketConnector,GcsSink,****************,****************,[Refer Helper Data],[Refer Helper Data],[Refer Helper Data],[Refer Helper Data],401,Client error responses: Unauthorized
+prod,aws,MyGcsLogsBucketConnector,GcsSink,****************,****************,[Refer Helper Data],[Refer Helper Data],[Refer Helper Data],[Refer Helper Data],429,Client error responses: Too Many Requests
+prod,aws,MyGcsLogsBucketConnector,GcsSink,****************,****************,[Refer Helper Data],[Refer Helper Data],[Refer Helper Data],[Refer Helper Data],500,Server error responses: Internal Server Error

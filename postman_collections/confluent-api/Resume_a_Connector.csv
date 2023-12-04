@@ -1,0 +1,6 @@
+connector_name,environment_id,kafka_cluster_id,statusCode,scenario
+flink_compute_pool_0,env-aaa1111,lkc-f3a90de,202,Successful responses: Accepted
+flink_compute_pool_0,env-aaa1111,lkc-f3a90de,401,Client error responses: Unauthorized
+flink_compute_pool_0,env-aaa1111,lkc-f3a90de,404,Client error responses: Not Found
+flink_compute_pool_0,env-aaa1111,lkc-f3a90de,429,Client error responses: Too Many Requests
+flink_compute_pool_0,env-aaa1111,lkc-f3a90de,500,Server error responses: Internal Server Error

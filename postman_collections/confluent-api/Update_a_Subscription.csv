@@ -1,0 +1,9 @@
+id,value,current_state,statusCode,scenario
+1,100,active,200,Successful responses: OK
+2,200,inactive,400,Client error responses: Bad Request
+3,300,active,401,Client error responses: Unauthorized
+4,400,inactive,403,Client error responses: Forbidden
+5,500,active,404,Client error responses: Not Found
+6,600,inactive,422,Client error responses: Unprocessable Entity
+7,700,active,429,Client error responses: Too Many Requests
+8,800,inactive,500,Server error responses: Internal Server Error
