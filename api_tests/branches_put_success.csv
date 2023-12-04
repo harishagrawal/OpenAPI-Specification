@@ -1,0 +1,11 @@
+cocNumber,cocBranchNumber,city,tradeName,phone,email
+123456,1,New York,Trade Corp,1234567890,tradecorp@example.com
+234567,2,Los Angeles,Global Trade,2345678901,globaltrade@example.com
+345678,3,Chicago,Trade Hub,3456789012,tradehub@example.com
+456789,4,Houston,World Trade,4567890123,worldtrade@example.com
+567890,5,Phoenix,Trade Sphere,5678901234,tradesphere@example.com
+678901,6,Philadelphia,Trade Axis,6789012345,tradeaxis@example.com
+789012,7,San Antonio,Trade Orbit,7890123456,tradeorbit@example.com
+890123,8,San Diego,Trade Galaxy,8901234567,tradegalaxy@example.com
+901234,9,Dallas,Trade Cosmos,9012345678,tradecosmos@example.com
+012345,10,San Jose,Trade Universe,0123456789,tradeuniverse@example.com

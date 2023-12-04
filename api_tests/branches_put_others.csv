@@ -1,0 +1,11 @@
+cocNumber,cocBranchNumber,city,tradeName,phone,email
+123456,1,Amsterdam,TradeCo,31612345678,info@tradeco.nl
+234567,2,Rotterdam,BizBros,31623456789,contact@bizbros.nl
+345678,3,Utrecht,ComCorp,31634567890,support@comcorp.nl
+456789,4,Den Haag,EntEnt,31645678901,hello@entent.nl
+567890,5,Eindhoven,IndInc,31656789012,service@indinc.nl
+678901,6,Groningen,TechTraders,31667890123,info@techtraders.nl
+789012,7,Almere,ProPartners,31678901234,contact@propartners.nl
+890123,8,Breda,GlobGroup,31689012345,support@globgroup.nl
+901234,9,Nijmegen,FinFam,31690123456,hello@finfam.nl
+012345,10,Apeldoorn,MarkMakers,31601234567,service@markmakers.nl

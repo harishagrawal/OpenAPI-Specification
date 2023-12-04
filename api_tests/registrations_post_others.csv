@@ -1,0 +1,11 @@
+id,startDate,endDate,credentialUrl
+1,2021-01-01,2021-12-31,https://example.com/credentials/1
+2,2020-02-01,2020-12-31,https://example.com/credentials/2
+3,2022-03-01,2022-12-31,https://example.com/credentials/3
+4,2019-04-01,2019-12-31,https://example.com/credentials/4
+5,2023-05-01,2023-12-31,https://example.com/credentials/5
+6,2018-06-01,2018-12-31,https://example.com/credentials/6
+7,2024-07-01,2024-12-31,https://example.com/credentials/7
+8,2017-08-01,2017-12-31,https://example.com/credentials/8
+9,2025-09-01,2025-12-31,https://example.com/credentials/9
+10,2016-10-01,2016-12-31,https://example.com/credentials/10

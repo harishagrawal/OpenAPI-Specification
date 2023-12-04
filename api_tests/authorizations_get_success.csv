@@ -1,0 +1,11 @@
+id,name,email,createdAt,updatedAt
+1,John Doe,johndoe@example.com,2022-01-01,2022-01-02
+2,Jane Doe,janedoe@example.com,2022-01-02,2022-01-03
+3,James Smith,jamessmith@example.com,2022-01-03,2022-01-04
+4,Jessica Johnson,jessicajohnson@example.com,2022-01-04,2022-01-05
+5,Michael Williams,michaelwilliams@example.com,2022-01-05,2022-01-06
+6,Emily Brown,emilybrown@example.com,2022-01-06,2022-01-07
+7,David Jones,davidjones@example.com,2022-01-07,2022-01-08
+8,Mary Miller,marymiller@example.com,2022-01-08,2022-01-09
+9,Robert Davis,robertdavis@example.com,2022-01-09,2022-01-10
+10,Sarah Wilson,sarahwilson@example.com,2022-01-10,2022-01-11

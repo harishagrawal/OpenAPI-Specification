@@ -1,0 +1,11 @@
+id,reference,startDate,endDate,credentialUrl
+12345,REF001,2021-01-01,2021-12-31,http://example.com/credential/12345
+12346,REF002,2021-02-01,2022-01-31,http://example.com/credential/12346
+12347,REF003,2021-03-01,2022-02-28,http://example.com/credential/12347
+12348,REF004,2021-04-01,2022-03-31,http://example.com/credential/12348
+12349,REF005,2021-05-01,2022-04-30,http://example.com/credential/12349
+12350,REF006,2021-06-01,2022-05-31,http://example.com/credential/12350
+12351,REF007,2021-07-01,2022-06-30,http://example.com/credential/12351
+12352,REF008,2021-08-01,2022-07-31,http://example.com/credential/12352
+12353,REF009,2021-09-01,2022-08-31,http://example.com/credential/12353
+12354,REF010,2021-10-01,2022-09-30,http://example.com/credential/12354

@@ -1,0 +1,11 @@
+id,initials,firstName,middleName,lastName,birthDate,birthPlace,phone,email,postalCode,houseNumber,houseNumberPostfix,countryCode,reference
+1,J.K.,John,Kennedy,Smith,1980-01-01,New York,1234567890,johnsmith@gmail.com,10001,10,A,US,JS001
+2,R.L.,Robert,Leonard,Johnson,1985-02-02,Los Angeles,2345678901,robertjohnson@gmail.com,90001,20,B,US,RJ002
+3,M.N.,Michael,Norman,Williams,1990-03-03,Chicago,3456789012,michaelwilliams@gmail.com,60601,30,C,US,MW003
+4,B.O.,Brian,Oscar,Brown,1995-04-04,Houston,4567890123,brianbrown@gmail.com,77001,40,D,US,BB004
+5,S.P.,Steven,Paul,Miller,2000-05-05,Phoenix,5678901234,stevenmiller@gmail.com,85001,50,E,US,SM005
+6,A.Q.,Andrew,Quincy,Davis,1982-06-06,Philadelphia,6789012345,andrewdavis@gmail.com,19101,60,F,US,AD006
+7,T.R.,Thomas,Richard,Garcia,1987-07-07,San Antonio,7890123456,thomasgarcia@gmail.com,78201,70,G,US,TG007
+8,H.S.,Harry,Scott,Rodriguez,1992-08-08,San Diego,8901234567,harryrodriguez@gmail.com,92101,80,H,US,HR008
+9,G.T.,Gary,Thomas,Wilson,1997-09-09,Dallas,9012345678,garywilson@gmail.com,75201,90,I,US,GW009
+10,D.U.,David,Underwood,Martinez,1975-10-10,San Jose,0123456789,davidmartinez@gmail.com,95101,100,J,US,DM010

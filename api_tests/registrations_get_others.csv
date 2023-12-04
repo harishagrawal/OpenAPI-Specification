@@ -1,0 +1,11 @@
+id,credential-url,size,offset
+1,http://example.com/credential1,300,0
+2,http://example.com/credential2,500,100
+3,http://example.com/credential3,700,200
+4,http://example.com/credential4,900,300
+5,http://example.com/credential5,1100,400
+6,http://example.com/credential6,1300,500
+7,http://example.com/credential7,1500,600
+8,http://example.com/credential8,1700,700
+9,http://example.com/credential9,1900,800
+10,http://example.com/credential10,2100,900

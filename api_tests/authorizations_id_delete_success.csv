@@ -1,0 +1,11 @@
+id,name,email,phone,DOB,Address
+1,John Doe,johndoe@example.com,9876543210,1990-01-01,1234 Elm St
+2,Jane Smith,janesmith@example.com,1234567890,1990-02-02,2345 Oak St
+3,Bob Johnson,bobjohnson@example.com,9871234560,1991-03-03,3456 Pine St
+4,Alice Williams,alicewilliams@example.com,7890123456,1992-04-04,4567 Maple St
+5,Charlie Brown,charliebrown@example.com,6789012345,1993-05-05,5678 Birch St
+6,Diane Miller,dianemiller@example.com,5678901234,1994-06-06,6789 Cedar St
+7,Frank Wilson,frankwilson@example.com,4567890123,1995-07-07,7890 Spruce St
+8,Grace Jones,gracejones@example.com,3456789012,1996-08-08,8901 Aspen St
+9,Henry Martinez,henrymartinez@example.com,2345678901,1997-09-09,9012 Willow St
+10,Irene Thompson,irenethompson@example.com,1234567890,1998-10-10,0123 Poplar St

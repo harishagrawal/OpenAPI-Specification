@@ -1,0 +1,11 @@
+id,initials,firstName,middleName,lastName,birthDate,birthPlace,phone,email,postalCode,houseNumber,houseNumberPostfix,countryCode,reference
+1,AB,Adam,Benjamin,Smith,1985-06-15,New York,1234567890,adamsmith@gmail.com,10001,12,A,US,REF001
+2,CD,Charles,David,Johnson,1990-12-10,Chicago,2345678901,charlesjohnson@yahoo.com,60616,34,B,US,REF002
+3,EF,Emily,Frank,Lee,1995-04-20,San Francisco,3456789012,emilylee@hotmail.com,94103,56,C,US,REF003
+4,GH,George,Henry,Martin,1987-02-28,Las Vegas,4567890123,georgemartin@aol.com,89101,78,D,US,REF004
+5,IJ,Irene,Jackie,Williams,1992-11-16,Houston,5678901234,irenewilliams@gmail.com,77002,90,E,US,REF005
+6,KL,Kevin,Louis,Brown,1988-07-24,Philadelphia,6789012345,kevinbrown@yahoo.com,19106,12,F,US,REF006
+7,MN,Michael,Norman,Garcia,1994-09-30,Phoenix,7890123456,michaelgarcia@hotmail.com,85001,34,G,US,REF007
+8,OP,Olivia,Peter,Davis,1989-05-18,San Antonio,8901234567,oliviadavis@aol.com,78205,56,H,US,REF008
+9,QR,Quincy,Roger,Miller,1993-01-22,San Diego,9012345678,quincymiller@gmail.com,92101,78,I,US,REF009
+10,ST,Sarah,Thomas,Wilson,1991-08-14,Dallas,0123456789,sarahwilson@yahoo.com,75201,90,J,US,REF010
