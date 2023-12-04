@@ -1,0 +1,11 @@
+id,did,name,image,email,settings,createdAt,updatedAt
+1,10,John Doe,https://image1.com,john.doe@gmail.com,Dark Mode,2022-01-01,2022-02-01
+2,20,Jane Doe,https://image2.com,jane.doe@gmail.com,Light Mode,2022-01-02,2022-02-02
+3,30,Robert Smith,https://image3.com,robert.smith@gmail.com,Dark Mode,2022-01-03,2022-02-03
+4,40,Laura Johnson,https://image4.com,laura.johnson@gmail.com,Light Mode,2022-01-04,2022-02-04
+5,50,Charles Brown,https://image5.com,charles.brown@gmail.com,Dark Mode,2022-01-05,2022-02-05
+6,60,Sarah Miller,https://image6.com,sarah.miller@gmail.com,Light Mode,2022-01-06,2022-02-06
+7,70,William Davis,https://image7.com,william.davis@gmail.com,Dark Mode,2022-01-07,2022-02-07
+8,80,Emily Wilson,https://image8.com,emily.wilson@gmail.com,Light Mode,2022-01-08,2022-02-08
+9,90,David Anderson,https://image9.com,david.anderson@gmail.com,Dark Mode,2022-01-09,2022-02-09
+10,100,Jennifer Thomas,https://image10.com,jennifer.thomas@gmail.com,Light Mode,2022-01-10,2022-02-10
