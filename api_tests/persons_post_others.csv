@@ -1,0 +1,11 @@
+birthDate,initials,lastName,firstName,middleName,birthPlace,phone,email,postalCode,houseNumber,houseNumberPostfix,countryCode,reference
+1980-12-20,JS,Smith,John,Matthew,London,1234567890,johnsmith@gmail.com,SW1A2AA,12,A,GB,REF1234
+1975-05-15,MA,Johnson,Mary,Ann,New York,0987654321,maryjohnson@yahoo.com,10001,34,B,US,REF2345
+1989-08-30,RK,Williams,Robert,Kenneth,Paris,1122334455,robertwilliams@hotmail.com,75001,56,C,FR,REF3456
+1990-03-10,LP,Brown,Linda,Patricia,Berlin,2233445566,lindabrown@outlook.com,10115,78,D,DE,REF4567
+1978-06-25,DT,Jones,David,Thomas,Beijing,3344556677,davidjones@aol.com,100000,90,E,CN,REF5678
+1985-09-15,JS,Miller,James,Steven,Moscow,4455667788,jamesmiller@yahoo.com,101000,12,F,RU,REF6789
+1982-02-20,MM,Davis,Michael,Mark,Rome,5566778899,michaeldavis@gmail.com,00100,34,G,IT,REF7890
+1979-07-30,PT,Garcia,Patricia,Teresa,Madrid,6677889900,patriciagarcia@hotmail.com,28001,56,H,ES,REF8901
+1988-11-10,RL,Rodriguez,Richard,Lee,Amsterdam,7788990011,richardrodriguez@outlook.com,1011,78,I,NL,REF9012
+1992-04-25,SW,Wilson,Sarah,William,Sydney,8899001122,sarahwilson@aol.com,2000,90,J,AU,REF0123

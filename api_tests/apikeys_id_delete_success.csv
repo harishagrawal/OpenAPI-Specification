@@ -1,0 +1,11 @@
+id,name,email,phone,DOB
+1,John Doe,johndoe@example.com,1234567890,1990-01-01
+2,Jane Smith,janesmith@example.com,2345678901,1992-02-02
+3,Robert Johnson,rjohnson@example.com,3456789012,1994-03-03
+4,Michael Williams,mwilliams@example.com,4567890123,1996-04-04
+5,James Jones,jjones@example.com,5678901234,1998-05-05
+6,Patricia Brown,pbrown@example.com,6789012345,2000-06-06
+7,Linda Davis,ldavis@example.com,7890123456,2002-07-07
+8,David Miller,dmiller@example.com,8901234567,2004-08-08
+9,Elizabeth Wilson,ewilson@example.com,9012345678,2006-09-09
+10,Charles Moore,cmoore@example.com,0123456789,2008-10-10

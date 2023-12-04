@@ -1,0 +1,11 @@
+initials,firstName,middleName,lastName,birthDate,birthPlace,phone,email,postalCode,houseNumber,houseNumberPostfix,countryCode,reference
+J.K.,John,Kenneth,Doe,1980-12-25,New York,1234567890,john.doe@gmail.com,10001,25,A,US,REF001
+M.A.,Mary,Ann,Johnson,1985-05-10,London,2345678901,mary.johnson@hotmail.com,SW1A 2AA,10,B,UK,REF002
+A.J.,Anthony,Jacob,Smith,1990-08-15,Sydney,3456789012,anthony.smith@yahoo.com,2000,15,C,AU,REF003
+L.M.,Laura,Michelle,Brown,1995-03-20,Paris,4567890123,laura.brown@gmail.com,75001,20,D,FR,REF004
+P.R.,Paul,Richard,Jones,2000-06-25,Tokyo,5678901234,paul.jones@hotmail.com,100-0005,25,E,JP,REF005
+S.J.,Sarah,Jessica,Miller,1982-10-31,Berlin,6789012345,sarah.miller@yahoo.com,10115,30,F,DE,REF006
+B.G.,Brian,George,Davis,1987-02-14,Moscow,7890123456,brian.davis@gmail.com,101000,35,G,RU,REF007
+E.L.,Emma,Louise,Garcia,1992-07-04,Beijing,8901234567,emma.garcia@hotmail.com,100000,40,H,CN,REF008
+R.P.,Robert,Patrick,Rodriguez,1997-11-18,Rome,9012345678,robert.rodriguez@yahoo.com,00100,45,I,IT,REF009
+J.S.,Jennifer,Susan,Wilson,2005-04-23,New Delhi,1234567890,jennifer.wilson@gmail.com,110001,50,J,IN,REF010

@@ -1,0 +1,11 @@
+id,did,name,image,email,settings,createdAt,updatedAt
+1,1001,John Doe,johndoe.jpg,johndoe@gmail.com,Dark Mode,2022-01-01,2022-01-02
+2,1002,Jane Smith,janesmith.jpg,janesmith@gmail.com,Light Mode,2022-01-02,2022-01-03
+3,1003,Robert Johnson,robertjohnson.jpg,robertjohnson@gmail.com,Dark Mode,2022-01-03,2022-01-04
+4,1004,Mary Davis,marydavis.jpg,marydavis@gmail.com,Light Mode,2022-01-04,2022-01-05
+5,1005,James Brown,jamesbrown.jpg,jamesbrown@gmail.com,Dark Mode,2022-01-05,2022-01-06
+6,1006,Patricia Jones,patriciajones.jpg,patriciajones@gmail.com,Light Mode,2022-01-06,2022-01-07
+7,1007,Michael Miller,michaelmiller.jpg,michaelmiller@gmail.com,Dark Mode,2022-01-07,2022-01-08
+8,1008,Elizabeth Wilson,elizabethwilson.jpg,elizabethwilson@gmail.com,Light Mode,2022-01-08,2022-01-09
+9,1009,William Moore,williammoore.jpg,williammoore@gmail.com,Dark Mode,2022-01-09,2022-01-10
+10,1010,Jennifer Taylor,jennifertaylor.jpg,jennifertaylor@gmail.com,Light Mode,2022-01-10,2022-01-11
