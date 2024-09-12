@@ -1,0 +1,39 @@
+config:
+  target: "{{ $processEnvironment.SERVER_URL }}"
+  phases:
+    - duration: 60
+      arrivalRate: 20
+  plugins:
+    expect: {}
+    csv:
+      filename: "./data.csv"
+      delimiter: ","
+scenarios:
+  - name: "Successful API request"
+    flow:
+      - loop:
+        - get:
+            url: "/pets"
+            qs:
+              tags: "{{ tag }}"
+              limit: "{{ limit }}"
+            expect:
+              - statusCode: 200
+              - hasProperty: "pets"
+        over: "csv"
+  - name: "API request with validation failure"
+    flow:
+      - get:
+          url: "/invalid_url"
+          expect:
+            - statusCode: 404
+  - name: "API request with edge case"
+    flow:
+      - get:
+          url: "/pets"
+          qs:
+            tags: "tag1,tag2"
+            limit: 9999999999999999
+          expect:
+            - statusCode: 200
+            - hasProperty: "pets"
